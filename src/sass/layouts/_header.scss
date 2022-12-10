@@ -1,3 +1,9 @@
+.header{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: absolute;
+  width: 100%;
+}
 .logo__name{
 font-family: 'Film P3';
 font-style: normal;
@@ -5,14 +11,13 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.08;
 letter-spacing: 0.3em;
+text-transform: uppercase;
 
 color: tomato;
 // color: #FFFFFF;
-margin-right: 52px;
+
 margin-top: 16px; 
-@include tablet{
-font-size: 40px;
-}
+
 }
 .header__container{
   display: flex;
@@ -21,65 +26,72 @@ font-size: 40px;
 }
 .navigation-list{
   display: flex;
+  margin-left: auto;
 
-  
 }
 .navigation__list__link{
   font-style: normal;
   font-weight: 500;
   line-height: 1.25;
-
-    color: #F3C653;
-    @include tablet{
-      margin-right: 60px;
-    }
-}
-.navigation__list__item:not(:last-child){
-  margin-right: 50px;
-  @include tablet{
-    margin-right: 0;
-  }
-
-}
-.navigation__list__tel__item{
-display: none;
-@include tablet{
-display: flex;
-align-items: center;
-
-font-size: 14px;
-line-height: 1.2;
-
-letter-spacing: 0.02em;
-color: tomato;
-// color: #FFFFFF;
-
-
-}
-}
-.tel-item{
-  display: none;
-  @include tablet{
-    display: flex;
-  width: 144px;
-  height: 40px;
-border: 1px solid rgba(243, 198, 83, 0.7);
-border-radius: 2px;  
-margin-right: 72px;
-}
-}
-.navigation__list__tel{
-  display: none;
-  @include tablet{
   display: flex;
-  align-items: center;
-  gap: 16px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px; 
-width: 264px;
-height: 40px;}
+    color: #F3C653;
+    align-items: center;
+  
 }
+
+
+.navigation__list__item:not(:last-child){
+  margin-right: 20px;
+  // @include tablet{
+  //   margin-right: 0;
+  // }
+}
+// .navigation__list__tel__item{
+// display: none;
+// @include tablet{
+// display: flex;
+// align-items: center;
+
+// font-size: 14px;
+// line-height: 1.2;
+
+// letter-spacing: 0.02em;
+// color: tomato;
+// // color: #FFFFFF;
+
+
+// }
+// }
+// .tel-item{
+// display: none;
+//   @include tablet{
+//     display: flex;
+// width: 144px;
+// height: 40px;
+// border: 1px solid rgba(243, 198, 83, 0.7);
+// border-radius: 2px;  
+// margin-right: 72px;
+// }
+// }
+// .navigation__list__tel{
+//   display: none;
+//   @include tablet{
+//   display: flex;
+//   align-items: center;
+//   gap: 16px;
+//   border: 1px solid rgba(243, 198, 83, 0.7);
+//   border-radius: 2px; 
+// width: 264px;
+// height: 40px;}
+// }
 .navigation-container{
 display: flex;
 }
 
+.header__icon{
+  fill: #F3C653;
+  width: 24px;
+  height: 24px;
+
+margin-left: 12px;
+}

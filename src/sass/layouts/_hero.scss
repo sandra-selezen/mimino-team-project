@@ -1,10 +1,24 @@
+.hero{
+ 
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), 
+    url(../images/home/mobile/hmpg-1-mb.jpg);
+    background-color: rgba(0, 0, 0, 0.65);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+   
+    padding-bottom: 20px;
 
+}
 .rest__address {
+
     width: 210px;
     height: 47px;
     
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 5px;
     margin-left: auto;
 
@@ -17,6 +31,11 @@
     
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
+
+    margin-bottom: 70px;
+    }
+    .icon-location{
+        margin-right: 8px;
     }
     .hero__title{
         display: flex;
@@ -26,11 +45,12 @@
     font-size: 96px;
     line-height: 1.07;
     letter-spacing: 0.3em;
+    text-transform: uppercase;
 
-    color: tomato;
+    color: #FFFFFF;
 
     margin-bottom: 24px;
-// color: #FFFFFF;
+
     }
 .hero__pretitle{
     display: flex;
@@ -40,8 +60,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     
-    color: tomato;
-    // color: #FFFFFF;
+    color: #FFFFFF;
 
     margin-bottom: 40px;
 }
@@ -57,8 +76,7 @@
    letter-spacing: 0.05em;
    text-transform: uppercase; 
 
-    color: tomato;
-    // color: #FFFFFF;
+    color: #FFFFFF;
     margin-bottom: 113px;
 }
 
