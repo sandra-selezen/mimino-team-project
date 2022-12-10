@@ -22,7 +22,7 @@
 }
 
 .button-secondary {
-    @extend .button--primary;
+    @extend .button-primary;
     background-color: $mainDarkColor;
 }
 
