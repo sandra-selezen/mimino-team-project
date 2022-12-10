@@ -1,0 +1,85 @@
+.button {
+    cursor: pointer;
+}
+
+.button--primary {
+    border-radius: 25px;
+    padding: 14px 24px;
+    min-width: 236px;
+    text-align: center;
+    border: 2px solid $mainLightColor;
+    background-color: $buttonBgColor;
+       
+    // шрифт
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $accentColor;
+
+    transition: background-color 250ms ease-in-out;
+    &:hover, &:focus {
+        background-color: $mainLightColor;
+    }
+}
+
+.button--secondary {
+    @extend .button--primary;
+    background-color: $mainDarkColor;
+}
+
+.button--tertiary {
+    border-radius: 25px;
+    padding: 20px 43px;
+    min-width: 384px;
+    border: 1px solid $accentColor;
+    background-color: $mainDarkColor;
+    text-align: center;
+
+    // шрифт
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $mainLightColor; 
+
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    &:hover, &:focus {
+        color: $mainDarkColor;
+        background-color: $accentColor;
+    }
+@include desktop {
+    padding: 18px 38px;
+    font-size: 24px;
+}
+}
+
+.button--modal {
+    width: 100%;
+    padding: 20px 43px;
+    border-radius: 2px;
+    border: 1px solid $accentColor;
+    text-align: center;
+    background-color: $mainDarkColor;
+
+    // шрифт
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+
+    color: $mainLightColor;
+
+    transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    &:hover, &:focus {
+    color: $mainDarkColor;
+    background-color: $accentColor;
+}
+@include tablet {
+    padding: 18px 117px;
+    font-size: 24px;
+}
+}
