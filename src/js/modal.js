@@ -1,7 +1,7 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open-book-table]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
+    closeModalBtn: document.querySelector('[data-modal-close-book-table]'),
     modal: document.querySelector('[data-modal-book-table]'),
   };
 
@@ -16,7 +16,7 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open-book-room]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
+    closeModalBtn: document.querySelector('[data-modal-close-book-room]'),
     modal: document.querySelector('[data-modal-book-room]'),
   };
 
@@ -31,7 +31,7 @@
 (() => {
   const refs = {
     openModalBtn: document.querySelector('[data-modal-open-room-price]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
+    closeModalBtn: document.querySelector('[data-modal-close-room-price]'),
     modal: document.querySelector('[data-modal-room-price]'),
   };
 
