@@ -127,26 +127,8 @@ padding-top: 130px;
     }
 }
 
-.hero__button{
-width: 236px;
-height: 48px;
 
-font-weight: 700;
-font-size: 16px;
-line-height: 1.25;
 
-color: #F3C653;
-
-background: rgba(0, 0, 0, 0.4);
-border: 2px solid #FFFFFF;
-border-radius: 25px;
-&:hover,
-&:focus{
-    background: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
-    }
-}
 .hero__button:not(:last-child){
     margin-bottom: 24px;
     @include  tablet{
