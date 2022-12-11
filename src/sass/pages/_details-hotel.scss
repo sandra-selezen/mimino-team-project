@@ -1,0 +1,75 @@
+.details-hotel {
+      max-width: 414px;
+  max-height: 878px;
+  margin: 0px auto;
+  background-color: $detailsHotelBgColor;
+  background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/mobile/hmpg-19-mb.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include retina {
+        background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/mobile/hmpg-19-mb@2x.jpg');
+}
+  @include tablet {
+    max-width: 1024px;
+    max-height: 620px;
+    background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/tablet/hmpg-19-tb.jpg');
+    @include retina {
+        background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/tablet/hmpg-19-tb@2x.jpg');
+    }
+  }
+  @include desktop {
+    max-width: 1280px;
+    background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/desktop/hmpg-19-ds.jpg');
+    @include retina {
+        background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/desktop/hmpg-19-ds@2x.jpg');
+    }
+  }
+}
+
+.details-hotel__text-container {
+    @extend .details-restaurant__text-container;
+    padding-left: 0;
+    padding-right: calc(100%/3);
+        @include tablet {
+        padding-right: 230px;
+        margin-bottom: 40px;
+        margin-left: auto;
+    }
+    @include desktop {
+        padding-right: 253px;
+    }
+}
+
+.details-hotel__logo {
+    @extend .details-restaurant__logo;
+    text-align: right;
+}
+
+.details-hotel__title {
+    @extend .details-restaurant__title;
+    text-align: right;
+}
+
+.details-hotel__text {
+    @extend .details-restaurant__text;
+}
+
+.details-hotel__thumb {
+        @include tablet {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.buttons-list__details-hotel {
+        text-align: center;
+    @include tablet {
+        margin-right: 0;
+        margin-left: 29px;
+    }
+    @include desktop {
+        margin-right: 0;
+        margin-left: 32px;
+    }
+}
