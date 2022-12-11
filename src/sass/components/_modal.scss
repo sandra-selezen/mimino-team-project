@@ -1,20 +1,23 @@
 .modal {
   width: 100%;
-  @media screen and (min-width: 414px) {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0 16px;
+  @include mobile {
     width: 414px;
   }
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 712px;
     padding: 0 60px;
   }
-  background-color: var(--primaryBgColor);
+  background-color: $primaryBgColor;
+  display: block;
   position: absolute;
   padding: 16px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
@@ -32,7 +35,7 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -47,11 +50,11 @@
   top: 16px;
   margin-left: auto;
   margin-right: auto;
-  fill: #000000;
+  fill: $mainDarkColor;
   cursor: pointer;
   &:hover,
   &:focus {
-    fill: #f3c653;
+    fill: $accentColor;
   }
 }
 
@@ -64,19 +67,19 @@
   letter-spacing: 0.05em;
   margin-top: 60px;
   margin-bottom: 40px;
-  color: #000000;
+  color: $mainDarkColor;
   text-align: center;
 }
 .modal-input {
   width: 100%;
   height: 54px;
-  border: 1px solid #c79002;
+  border: 1px solid $secondaryAccentColor;
   border-radius: 2px;
   padding-left: 12px;
   outline: transparent;
   cursor: pointer;
   &:focus {
-    border-color: var(--secondaryAccentColor);
+    border-color: $secondaryAccentColor;
   }
   font-family: 'Times New Roman';
   font-style: normal;
@@ -84,8 +87,8 @@
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
-  color: var(--modalPlaceholderColor);
-  background-color: var(--primaryBgColor);
+  color: $modalPlaceholderColor;
+  background-color: $primaryBgColor;
 }
 
 input[type='date'] {
@@ -126,7 +129,7 @@ select::-ms-expand {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 288px;
   }
 }
@@ -134,8 +137,8 @@ select::-ms-expand {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 1024px) {
-    margin-right: 304px;
+  @include tablet {
+    margin-left: 304px;
     width: 288px;
   }
 }
@@ -146,28 +149,13 @@ select::-ms-expand {
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
-  color: #c79002;
+  color: $secondaryAccentColor;
   padding-left: 12px;
   margin-top: 8px;
 }
 .button-submit {
-  width: 100%;
-  height: 64px;
-  background: #000000;
-  border-style: none;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: calc(24 / 20);
-  color: #ffffff;
+  @extend .button-modal;
   margin-top: 20px;
-  border: 1px solid #f3c653;
-  border-radius: 2px;
-  &:hover,
-  &:focus {
-    background: #f3c653;
-  }
   margin-bottom: 60px;
 }
 .user-name-text-date {
@@ -177,7 +165,7 @@ select::-ms-expand {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  color: #c79002;
+  color: $secondaryAccentColor;
   padding-left: 12px;
   margin-top: 8px;
 }
