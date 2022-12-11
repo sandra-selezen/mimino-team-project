@@ -6,9 +6,9 @@
     max-width: 414px;
   }
   @include tablet {
-    max-width: 1024px;
+    max-width: 960px;
   }
   @include desktop {
-    max-width: 1280px;
+    max-width: 1140px;
   }
 }

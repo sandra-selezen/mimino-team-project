@@ -9,26 +9,8 @@
 }
 .footer__container {
   display: flex;
-  gap: 40px;
+  justify-content: space-around;
   align-items: center;
-  @include mobile {
-    padding-left: 59px;
-    padding-right: 41px;
-    display: flex;
-    gap: 85px;
-  }
-  @include tablet {
-    padding-left: 154px;
-    padding-right: 122px;
-    display: flex;
-    gap: 130px;
-  }
-  @include desktop {
-    padding-left: 216px;
-    padding-right: 186px;
-    display: flex;
-    gap: 225px;
-  }
 }
 
 .footer__list {
@@ -61,7 +43,6 @@
     gap: 120px;
   }
   @include desktop {
-    display: flex;
     gap: 190px;
   }
 }
@@ -78,8 +59,7 @@
   display: flex;
   gap: 20px;
   @include tablet {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 12px;
   }
 }
