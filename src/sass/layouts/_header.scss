@@ -1,12 +1,21 @@
 
+.header-container{
+display: flex;
+align-items: center;
+
+
+
+}
 .header{
   padding-top: 16px;
   padding-bottom: 16px;
   position: absolute;
+width: 100%;
   display: flex;
     align-items: center;
     z-index: 10;
 }
+
 .logo__name{
 font-family: 'Film P3';
 font-style: normal;
@@ -26,11 +35,7 @@ line-height: 1.08;
 }
 
 }
-// .header__container{
-//   display: flex;
-//   align-items: center;
 
-// }
 .navigation-list{
   display: flex;
 
@@ -110,13 +115,14 @@ color: #F3C653;
 
 display: flex;
 align-items: center;
+margin-right: 41px;
 }
 .navigation__tablet__list__item.bordered{
 display: flex;
-padding: 3px 5px;
+padding: 3px 2px;
 border: 1px solid rgba(243, 198, 83, 0.7);
 border-radius: 2px;
-margin-left: 41px;
+
 }
 .navigation__tablet__list__item.bordered:not(:last-child){
   margin-right: 80px;
@@ -131,5 +137,8 @@ align-items: center;
 letter-spacing: 0.02em;
 
 color: #FFFFFF;
-margin-right: 16px;
+
+}
+.navigation__tablet__list__tel:nth-child(2){
+margin-left: 16px;
 }
