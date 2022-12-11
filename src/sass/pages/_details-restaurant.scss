@@ -1,0 +1,107 @@
+.details-restaurant {
+  max-width: 414px;
+  max-height: 735px;
+  margin: 0px auto;
+  background-color: $heroBgColor;
+  background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/mobile/hmpg-8-mb.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include retina {
+        background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/mobile/hmpg-8-mb@2x.jpg');
+}
+  @include tablet {
+    max-width: 1024px;
+    max-height: 620px;
+    background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/tablet/hmpg-8-tb.jpg');
+    @include retina {
+        background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/tablet/hmpg-8-tb@2x.jpg');
+    }
+  }
+  @include desktop {
+    max-width: 1280px;
+    background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/desktop/hmpg-8-ds.jpg');
+    @include retina {
+        background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/desktop/hmpg-8-ds@2x.jpg');
+    }
+  }
+}
+
+.details-restaurant__text-container {
+    padding-left: calc(100%/3);
+    box-sizing: content-box;
+    max-width: 610px;
+    margin-bottom: 48px;
+    @include tablet {
+        padding-left: 230px;
+        margin-bottom: 40px;
+    }
+    @include desktop {
+        padding-left: 253px;
+    }
+}
+
+
+.details-restaurant__logo {
+    font-family: 'Film P3', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+    color: $mainLightColor;
+
+    margin-bottom: 12px;
+
+    @include tablet {
+        font-size: 64px;
+        margin-bottom: 16px;
+    }
+}
+
+.details-restaurant__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $mainLightColor;
+
+    margin-bottom: 20px;
+
+    @include tablet {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+.details-restaurant__text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $heroTextColor;
+
+    @include tablet {
+        font-size: 16px;
+    }
+}
+
+.destails-restaurant__thumb {
+    @include tablet {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+.buttons-list {
+    text-align: center;
+    @include tablet {
+        margin-right: 29px;
+    }
+    @include desktop {
+        margin-right: 32px;
+    }
+}
