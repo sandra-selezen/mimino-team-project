@@ -1,0 +1,164 @@
+.room__info {
+    @include mobile {
+padding-top: 32px;
+padding-bottom: 32px;
+    }
+    @include tablet {
+        padding-top: 48px;
+            padding-bottom: 40px;
+    }
+
+}
+.room__info-title {
+    @include mobile {
+margin-bottom: 16px;
+font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    }
+}
+.room__info-description {
+    @include mobile {
+        margin-bottom: 32px;
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.02em;
+        
+            color: #7A7A7A;
+    }
+
+         @include tablet {
+             max-width: 757px;
+         }
+}
+.room__features-title {
+    @include mobile {
+        margin-bottom: 16px;
+                font-family: 'Film P3';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    color: #000000;
+                }
+    }
+
+.room__features-item{
+    @include mobile {
+            margin-bottom: 16px;
+        }
+}
+
+.room__features-description {
+    @include mobile {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+    
+        color: #7A7A7A;
+    }
+    @include tablet {
+        max-width: 400px;
+    }
+}
+.feature-column-1 {
+    @include mobile {
+            margin-bottom: 16px;
+        }
+}   
+.room__features-item:last-child{
+    @include mobile {
+            margin-bottom: 0;
+        }
+}
+.room__nav {
+    @include mobile {
+        padding-top: 32px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+        @include tablet {
+            align-items: flex-end;
+        }
+                 @include desktop {
+                max-width: 959px;
+}
+}
+.room__booking-button {
+    @include mobile {
+        margin-bottom: 20px;
+        background-color: black;
+        width: 384px;
+        height: 64px;
+        border-radius: 25px;
+        border: 1px solid #F3C653;
+        font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+        
+            color: #FFFFFF;
+    }
+        @include tablet {
+            margin-bottom: 32px;
+                    font-size: 24px;
+                    width: 434px;
+                }
+}
+.room__back-link {
+
+    display: flex;
+    @include mobile {
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #C79002;
+        margin-left: 16px;
+    }
+        @include tablet {
+margin-left: 0;
+font-size: 20px;
+        }
+}
+
+
+
+.room__features-columns {
+@include tablet {
+    display: flex;
+    gap: 80px;
+}
+                @include desktop {
+                    max-width: 959px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 0;
+                }
+}
+
+
+.room__vanna-description {
+    @include desktop {
+        min-width: 495px;
+    }
+}
+
+.room__back-icon {
+    fill: #C79002;
+    margin-left: 17px;
+}
