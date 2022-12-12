@@ -1,6 +1,7 @@
 .modal {
   width: 100%;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 0 16px;
@@ -18,7 +19,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform $duration $timingFunction;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0);
   }
@@ -35,9 +36,9 @@
   z-index: 1;
   opacity: 1;
   overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: $modalBgColor;
+  transition: opacity $duration $timingFunction,
+    visibility $duration $timingFunction;
 }
 .modal-form {
   display: flex;
@@ -113,25 +114,15 @@ input[type='date']:valid::before {
   display: none;
 }
 
-.modal-input::-webkit-inner-spin-button,
-.modal-input::-webkit-calendar-picker-indicator {
-  display: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
 select {
   padding-right: 30px;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
   background-image: url('../images/arrow-down.svg');
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 24px auto, 100%;
 }
-select::-ms-expand {
-  display: none;
-}
+
 .modal-wrap {
   margin-bottom: 20px;
   display: flex;
