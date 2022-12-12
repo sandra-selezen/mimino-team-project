@@ -1,3 +1,7 @@
+.overflow-hidden {
+  overflow: hidden;
+}
+
 // LEFT SLIDER
 
 .hotel-slider {
@@ -5,6 +9,7 @@
   min-width: 0;
   position: relative;
   margin-bottom: 72px;
+  
 
   @include tablet {
     margin-bottom: 0;
