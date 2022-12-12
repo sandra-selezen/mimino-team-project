@@ -1,13 +1,13 @@
 .about-restaurant__container {
   position: relative;
   padding-top: 16px;
-  padding-bottom: 20px;
+  padding-bottom: 72px;
   @include tablet {
     padding-top: 120px;
-  padding-bottom: 32px;
+  padding-bottom: 262px;
   }
   @include desktop {
-  padding-bottom: 50px;
+  padding-bottom: 225px;
   }
 }
 
@@ -45,6 +45,12 @@
   }
   @include desktop {
     color: $primaryTitleColor;
+  }
+}
+
+.info-cards {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
   }
 }
 

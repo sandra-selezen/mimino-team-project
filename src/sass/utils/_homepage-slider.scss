@@ -1,0 +1,99 @@
+.slider-about-thumb {
+    @include tablet {
+        position: absolute;
+        width: 428px;
+        bottom: 96px;
+        right: 28px;
+    }
+
+  @include desktop {
+  bottom: 118px;
+  right: 15px;
+  width: 548px;
+  }
+}
+
+.slider-about-thumb .slider-about {
+    position: relative;
+    right: -69px;
+    width: 330px;
+    @include tablet {
+        width: 428px;
+        right: 0;
+    }
+    @include desktop {
+        width: 548px;
+  }
+}
+
+.homepage-slider .slick-track {
+    display: flex;
+    gap: 25px;
+    @include tablet {
+      gap: 40px;
+    }
+}
+
+.homepage-slider .slider-about {
+    width: 245px;
+    @include tablet {
+      width: 194px;
+    }
+    @include desktop {
+      width: 254px;
+    }
+}
+
+.homepage-slider .slick-arrow {
+    position: absolute;
+    bottom: -62px;
+    top: auto;
+    z-index: 10;
+
+    @include tablet {
+      top: 125%;
+    }
+    @include desktop {
+      top: 120%;
+    }
+  }
+  .homepage-slider .slick-arrow.slick-prev {
+    background-image: url(../images/arrow-left.svg);
+    background-repeat: no-repeat;
+    left: auto;
+    right: 64px;
+    @include desktop {
+      left: 82%;
+    }
+  }
+  .homepage-slider .slick-arrow.slick-next {
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    right: 15px;
+
+    @include tablet {
+      right: 0;
+    }
+    @include desktop {
+      left: 95%;
+    }
+  }
+  .homepage-slider .slick-prev,
+  .homepage-slider .slick-next {
+    width: 32px;
+    height: 32px;
+  }
+
+  .homepage-slider .slick-prev:before,
+  .homepage-slider .slick-next:before {
+    font-size: 0;
+  }
+
+.slider-about .slick-arrow.slick-next {
+  
+}
+
+.slider-about-thumb .slick-list {
+
+}
+
