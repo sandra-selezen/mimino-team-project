@@ -1,0 +1,144 @@
+
+.header-container{
+display: flex;
+align-items: center;
+
+
+
+}
+.header{
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position: absolute;
+width: 100%;
+  display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo__name{
+font-family: 'Film P3';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.08;
+letter-spacing: 0.3em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+margin-top: 16px; 
+@include tablet{
+
+font-size: 40px;
+line-height: 1.08;
+}
+
+}
+
+.navigation-list{
+  display: flex;
+
+
+}
+.navigation__list__link{
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25;
+  display: flex;
+    color: #F3C653;
+    align-items: center;
+  
+}
+
+.navigation__list__item:not(:last-child){
+  margin-right: 20px;
+
+}
+
+.navigation{
+margin-left: 30px;
+
+
+
+}
+.navigation{
+@include tablet{
+  display: none;
+}
+}
+.navigation__tablet{
+
+  @media screen and (max-width: 1023px){
+    display: none;
+  }
+  @include tablet{
+    margin-left: 87px;
+  }
+  @include desktop{
+    margin-left: 96px;
+  }
+  
+}
+.navigation__tablet__list{
+  display: flex;
+}
+.navigation-container{
+display: flex;
+
+}
+.navigation__tablet-container{
+  display: flex;
+}
+
+.header__icon{
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+
+margin-left: 12px;
+}
+.header__icon__tablet{
+  width: 24px;
+  height: 24px;
+  fill: #F3C653;
+}
+.navigation__tablet__list__link{
+
+
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+
+color: #F3C653;
+
+display: flex;
+align-items: center;
+margin-right: 41px;
+}
+.navigation__tablet__list__item.bordered{
+display: flex;
+padding: 3px 2px;
+border: 1px solid rgba(243, 198, 83, 0.7);
+border-radius: 2px;
+
+}
+.navigation__tablet__list__item.bordered:not(:last-child){
+  margin-right: 80px;
+}
+.navigation__tablet__list__tel{
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.21;
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+}
+.navigation__tablet__list__tel:nth-child(2){
+margin-left: 16px;
+}

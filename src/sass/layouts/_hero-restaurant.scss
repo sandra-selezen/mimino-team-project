@@ -1,0 +1,41 @@
+.hero__restaurant{
+
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), 
+    url(../images/restaurant/mobile/rstpg-1-mb.jpg);
+    background-color: rgba(0, 0, 0, 0.65);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+   
+    padding-bottom: 20px;
+    height: 740px;
+    @include retina
+{background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), 
+    url(../images/restaurant/mobile/rstpg-1-mb2x.jpg); }
+@include tablet{
+    height: 720px;
+    
+background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
+url(../images/restaurant/tablet/rstpg-1-tb.jpg);
+    
+  @include retina
+ {
+    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
+url(../images/restaurant/tablet/rstpg-1-tb2x.jpg);
+    }  
+
+ }
+
+@include desktop 
+    {background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
+    url(../images/restaurant/desktop/rstpg-1-ds.jpg);
+                    
+    @include retina { background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant/desktop/rstpg-1-ds2x.jpg);
+    }
+    max-width: 1920px;
+    }
+
+}
