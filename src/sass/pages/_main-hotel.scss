@@ -145,6 +145,16 @@
   &__slider-wrap {
     @include tablet {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__slider-wrap-right {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
     }
   }
   &__btn-wrap {
