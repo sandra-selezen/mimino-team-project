@@ -1,69 +1,4 @@
-table,
-tbody,
-caption,
-tr,
-th,
-td{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font-style: inherit;
-    vertical-align: baseline;
-}
 
-table{
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-}
-
-.gradient {
-    width: 100%;
-    max-width: 414px;
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(to right,
-            transparent 0%,
-            transparent 33.2%,
-            rgba(186, 186, 186, 0.4) 1px,
-            transparent 33.4%,
-            transparent 100%),
-        linear-gradient(to right,
-            transparent 0%,
-            transparent 66.5%,
-            rgba(186, 186, 186, 0.4) 1px,
-            transparent 66.7%,
-            transparent 100%);
-
-    @media screen and (min-width: 1024px) {
-        width: 1024px;
-        max-width: 1024px;
-        background: linear-gradient(to right,
-                transparent 0%,
-                transparent 49.99%,
-                rgba(186, 186, 186, 0.4) 1px,
-                transparent 50.1%,
-                transparent 100%),
-            linear-gradient(to right,
-                transparent 0%,
-                transparent 29.99%,
-                rgba(186, 186, 186, 0.4) 1px,
-                transparent 30.1%,
-                transparent 100%),
-            linear-gradient(to right,
-                transparent 0%,
-                transparent 70.99%,
-                rgba(186, 186, 186, 0.4) 1px,
-                transparent 71.1%,
-                transparent 100%);
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        max-width: 1280px;
-    }
-}
 
 .menu{
     width: 100%;
@@ -78,22 +13,6 @@ table{
         }
 }
 
-.gradient-container{
-    width: 100%;
-    max-width: 414px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    @media screen and (min-width: 1024px) {
-        width: 1024px;
-        max-width: 1024px;
-}
-
-@media screen and (min-width: 1280px) {
-    width: 1280px;
-    max-width: 1280px;
-}
-}
 
   .menu__container {
     padding:58px 32px 15px;
