@@ -1,7 +1,5 @@
 .overflow-hidden {
-  @media screen and (max-width: 1023px) {
-    overflow: hidden;
-  }
+  overflow: hidden;
 }
 
 // LEFT SLIDER
@@ -11,6 +9,7 @@
   min-width: 0;
   position: relative;
   margin-bottom: 72px;
+  
 
   @include tablet {
     margin-bottom: 0;
