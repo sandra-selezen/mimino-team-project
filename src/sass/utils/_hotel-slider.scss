@@ -1,0 +1,51 @@
+.hotel-slider {
+  right: 35%;
+  min-width: 0;
+  position: relative;
+  margin-bottom: 72px;
+  &__item {
+    width: 194px;
+
+    @include desktop {
+      width: 254px;
+    }
+  }
+  & .slick-list {
+    width: 404px;
+    // overflow: hidden;
+  }
+
+  & .slick-track {
+    display: flex;
+    gap: 16px;
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    // top: 214px;
+
+    top: 113%;
+    margin-top: 13px;
+    z-index: 10;
+  }
+  & .slick-arrow.slick-prev {
+    background-image: url(../images/arrow-left.svg);
+    background-repeat: no-repeat;
+    left: 35%;
+  }
+  & .slick-arrow.slick-next {
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    left: 50%;
+  }
+  & .slick-prev,
+  & .slick-next {
+    width: 32px;
+    height: 32px;
+  }
+
+  & .slick-prev:before,
+  & .slick-next:before {
+    font-size: 0;
+  }
+}

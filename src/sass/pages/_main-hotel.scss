@@ -1,0 +1,172 @@
+.hotel {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  @include tablet {
+    position: relative;
+    padding-top: 62px;
+    padding-bottom: 104px;
+  }
+
+  @include desktop {
+    padding-top: 72px;
+    padding-bottom: 112px;
+  }
+
+  &--secondary-bg-color {
+    background-color: $secondaryBgColor;
+  }
+  &__text {
+    margin-bottom: 8px;
+
+    color: $pretitleColor;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    line-height: 1.15;
+
+    @include tablet {
+      margin-bottom: 4px;
+
+      font-size: 32px;
+      line-height: 1.16;
+    }
+  }
+  &__text--right {
+    text-align: right;
+  }
+  &__logo {
+    margin-bottom: 32px;
+
+    color: $secondaryTitleColor;
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: 0.3em;
+
+    @include tablet {
+      margin-bottom: 62px;
+
+      font-size: 64px;
+    }
+
+    @include desktop {
+      margin-bottom: 72px;
+    }
+  }
+  &__logo--right {
+    text-align: right;
+  }
+  &__title {
+    margin-bottom: 12px;
+
+    color: $mainDarkColor;
+    font-family: 'Times New Roman';
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+
+    @include tablet {
+      margin-bottom: 16px;
+
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+    @include desktop {
+      margin-bottom: 24px;
+
+      font-size: 36px;
+      line-height: 1.14;
+    }
+  }
+  &__aftetitle {
+    margin-bottom: 32px;
+    max-width: 258px;
+
+    color: $primaryTextColor;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    @include tablet {
+      margin-bottom: 176px;
+      max-width: 439px;
+      font-size: 16px;
+    }
+
+    @include desktop {
+      margin-bottom: 188px;
+      max-width: 400px;
+      font-weight: 700;
+    }
+  }
+  &__wrap--right {
+    max-width: 305px;
+    margin-left: auto;
+  }
+  &__thumb {
+    margin-bottom: 32px;
+
+    max-width: 246px;
+    margin-left: auto;
+
+    @include tablet {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateY(-6.1%);
+      max-width: 400px;
+    }
+    @include desktop {
+      transform: translateY(-5.57%);
+      max-width: 460px;
+    }
+  }
+  &__thumb--right {
+    margin-bottom: 32px;
+
+    max-width: 246px;
+    margin-right: auto;
+
+    @include tablet {
+      position: absolute;
+      right: 50%;
+      top: 0;
+      transform: translateY(-6.1%);
+      max-width: 400px;
+    }
+
+    @include desktop {
+      transform: translateY(-5.57%);
+      max-width: 460px;
+    }
+  }
+  &__slider-wrap {
+    @include tablet {
+      display: flex;
+    }
+  }
+  &__btn-wrap {
+    text-align: center;
+  }
+  &__link {
+    margin-bottom: 16px;
+    display: inline-block;
+
+    border-color: transparent;
+  }
+  &__link:hover,
+  &__link:focus {
+    border-color: $accentColor;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    border-color: transparent;
+  }
+  &__button:hover,
+  &__button:focus {
+    border-color: $accentColor;
+  }
+}
