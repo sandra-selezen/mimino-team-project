@@ -1,0 +1,322 @@
+table,
+tbody,
+caption,
+tr,
+th,
+td{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    vertical-align: baseline;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.gradient {
+    width: 100%;
+    max-width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(to right,
+            transparent 0%,
+            transparent 33.2%,
+            rgba(186, 186, 186, 0.4) 1px,
+            transparent 33.4%,
+            transparent 100%),
+        linear-gradient(to right,
+            transparent 0%,
+            transparent 66.5%,
+            rgba(186, 186, 186, 0.4) 1px,
+            transparent 66.7%,
+            transparent 100%);
+
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+        max-width: 1024px;
+        background: linear-gradient(to right,
+                transparent 0%,
+                transparent 49.99%,
+                rgba(186, 186, 186, 0.4) 1px,
+                transparent 50.1%,
+                transparent 100%),
+            linear-gradient(to right,
+                transparent 0%,
+                transparent 29.99%,
+                rgba(186, 186, 186, 0.4) 1px,
+                transparent 30.1%,
+                transparent 100%),
+            linear-gradient(to right,
+                transparent 0%,
+                transparent 70.99%,
+                rgba(186, 186, 186, 0.4) 1px,
+                transparent 71.1%,
+                transparent 100%);
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+        max-width: 1280px;
+    }
+}
+
+.menu{
+    width: 100%;
+        margin: 0 auto;
+        background: #fffdee;
+
+    
+        @media screen and (min-width: 1024px) {
+            background-color: #f0ecd6;
+    
+            position: relative;
+        }
+}
+
+.gradient-container{
+    width: 100%;
+    max-width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @media screen and (min-width: 1024px) {
+        width: 1024px;
+        max-width: 1024px;
+}
+
+@media screen and (min-width: 1280px) {
+    width: 1280px;
+    max-width: 1280px;
+}
+}
+
+  .menu__container {
+    padding:58px 32px 15px;
+
+
+      @media screen and (min-width: 1024px) {
+        padding: 58px 47px 40px;
+
+      }
+
+      @media screen and (min-width: 1280px) {
+        padding: 58px 85px 60px;
+
+      }
+    }
+    
+
+ .menu__title {
+    font-family: Times New Roman bolt;
+    margin-bottom: 32px;
+    font-weight: 700;
+        font-size: 32px;
+        line-height: 1.16;
+        text-transform: uppercase;
+ color: #000000;
+    
+ @media screen and (min-width: 414px) {
+ font-size: 32px;
+ }
+
+    
+             @media screen and (min-width: 1024px) {
+                 padding-top: 58px;
+                 margin-bottom: 20px;
+             }
+         }
+
+  .menu__flex {
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 90px;
+      }
+        
+  @media screen and (min-width: 1280px) {
+  gap: 140px;
+  }
+  }
+
+.dishes__table{
+        width: 100%;
+            max-width: 384px;
+            border-collapse: collapse;
+            padding: 0;
+            margin-bottom: 16px;
+        
+            @media screen and (min-width: 1024px) {
+                min-width: 420px;
+                margin-bottom: 20px;
+            }
+        
+            @media screen and (min-width: 1280px) {
+                min-width: 485px;
+            }
+}
+
+.dishes__basis{
+    font-family: 'Times New Roman bolt';
+        margin: 16px 0 16px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        color: #000000;
+        text-align: left;
+    
+        @media screen and (min-width: 1024px) {
+            margin: 20px 0 20px;
+        }
+}
+
+.menu__list{
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        width: 300px;
+    
+        max-width: 384px;
+        gap: 8px;
+    
+    
+    
+        @media screen and (min-width: 1024px) {
+            min-width: 420px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            min-width: 485px;
+            gap: 12px;
+        }
+}
+
+.menu__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    color: #000000;
+
+    @media screen and (min-width: 1024px) {
+        width: 420px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 485px;
+    }
+}
+
+.dishes__denotation{
+    width: 100vw;
+        max-width: 225px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        
+            @media screen and (min-width: 1024px) {
+                max-width: 260px;
+            }
+}
+
+.dishes__storage{
+font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    letter-spacing: 0.02em;
+}
+
+.dishes__weight{
+        text-align: end;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        color: #000000;
+}
+
+.dishes__price{
+        text-align: end;
+        max-width: 62px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.21;
+        letter-spacing: 0.02em;
+        color: #000000;
+
+    @media screen and (min-width: 1024px){
+max-width: 70px;
+    }
+}
+
+
+  .menu__button {
+      display: block;
+      padding: 15px 24px 14px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.25;
+      margin: 0 auto;
+      background: #000000;
+      border: 2px solid #fff;
+      border-radius: 25px;
+      color: #F3C653;
+      width: 100%;
+      max-width: 236px;
+      margin-top: 32px;
+
+      cursor: pointer;
+      transition: background 250ms linear, border 250ms linear;
+
+    @media screen and (min-width: 1024px) {
+            margin-right: 0;
+            margin-top: 20px;
+        }
+  }
+
+          .menu__button:hover,
+          .menu__button:focus {
+          background: #fff;
+          border: 2px solid #F3C653;
+          
+      }
+
+      
+  
+
+  .menu__indent {
+      border-bottom: 8px solid transparent;
+
+    @media screen and (min-width: 1280px) {
+          border-bottom: 12px solid transparent;
+      }
+  }
+
+  .menu__indent-x {
+      border-bottom: 4px solid transparent;
+  }
+
+  .menu__indent-y {
+      border-bottom: 8px solid transparent;
+
+    @media screen and (min-width: 1024px) {
+          border-bottom: 15px solid transparent;
+      }
+
+          @media screen and (min-width: 1280px) {
+          border-bottom: 19px solid transparent;
+      }
+  }
+  
