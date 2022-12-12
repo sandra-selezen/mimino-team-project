@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Міміно</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Міміно</title>
 
-  <link rel="stylesheet" href="./sass/main.scss">
-</head>
-<body>
-  <!-- ❗️❗️❗️ Add partials like so for every page -->
-  <include src="./partials/header.html"></include>
-  <main>
-    <!-- <include src="./partials/hero.html"></include>
-    <include src="./partials/about-restaurant.html"></include>
-    <include src="./partials/details-restaurant.html"></include> -->
-    <!-- <include src="./partials/about-hotel.html"></include> -->
-    <include src="./partials/details-hotel.html"></include>
-    <!-- <include src="./partials/contacts.html"></include> -->
-  </main>
-  <include src="./partials/footer.html"></include>
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <include src="./partials/header.html"></include>
+    <main>
+      <include src="./partials/hero.html"></include>
+      <include src="./partials/about-restaurant.html"></include>
+      <include src="./partials/details-restaurant.html"></include>
+      <include src="./partials/about-hotel.html"></include>
+      <include src="./partials/details-hotel.html"></include>
+      <include src="./partials/contacts.html"></include>
+    </main>
+    <include src="./partials/footer.html"></include>
 
     <!-- MODAL WINDOWS -->
     <include src="./partials/book-table.html"></include>
     <include src="./partials/book-room.html"></include>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
