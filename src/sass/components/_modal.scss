@@ -114,13 +114,26 @@ input[type='date']:valid::before {
   display: none;
 }
 
+.modal-input::-webkit-inner-spin-button,
+.modal-input::-webkit-calendar-picker-indicator {
+  display: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
 select {
   padding-right: 30px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   background-image: url('../images/arrow-down.svg');
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 24px auto, 100%;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .modal-wrap {
