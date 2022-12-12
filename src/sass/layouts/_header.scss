@@ -1,16 +1,15 @@
 
 .header-container{
 display: flex;
+
 align-items: center;
-
-
 
 }
 .header{
   padding-top: 16px;
   padding-bottom: 16px;
   position: absolute;
-width: 100%;
+ width: 100%;
   display: flex;
     align-items: center;
     z-index: 10;
@@ -38,7 +37,7 @@ line-height: 1.08;
 
 .navigation-list{
   display: flex;
-
+max-width: 100%;
 
 }
 .navigation__list__link{
@@ -58,11 +57,13 @@ line-height: 1.08;
 
 .navigation{
 margin-left: 30px;
-
-
-
+@media screen and (max-width: 413px) {
+  margin-left: 15px;
 }
+}
+
 .navigation{
+
 @include tablet{
   display: none;
 }
@@ -95,8 +96,10 @@ display: flex;
   fill: currentColor;
   width: 24px;
   height: 24px;
-
-margin-left: 12px;
+  margin-left: 12px;
+  @media screen and (max-width: 413px) {
+    display: none;
+  }
 }
 .header__icon__tablet{
   width: 24px;
