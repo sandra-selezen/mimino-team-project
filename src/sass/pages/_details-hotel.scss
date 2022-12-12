@@ -1,4 +1,6 @@
 .details-hotel {
+    padding-top: 24px;
+    padding-bottom: 40px;
       max-width: 414px;
   max-height: 878px;
   margin: 0px auto;
@@ -11,6 +13,8 @@
         background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/mobile/hmpg-19-mb@2x.jpg');
 }
   @include tablet {
+    padding-top: 48px;
+    padding-bottom: 96px;
     max-width: 1024px;
     max-height: 620px;
     background-image:  linear-gradient($detailsHotelBgColor, $detailsHotelBgColor), url('../images/home/tablet/hmpg-19-tb.jpg');

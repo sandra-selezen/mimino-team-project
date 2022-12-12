@@ -4,10 +4,10 @@
   padding-bottom: 72px;
   @include tablet {
     padding-top: 120px;
-  padding-bottom: 262px;
+    padding-bottom: 262px;
   }
   @include desktop {
-  padding-bottom: 225px;
+    padding-bottom: 225px;
   }
 }
 
@@ -61,7 +61,7 @@
 }
 
 .info-card:first-child {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
   @include tablet {
     margin-bottom: 142px;
   }
@@ -71,7 +71,7 @@
 }
 
 .info-card:nth-child(2n):not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
   @include tablet {
     margin-bottom: 0;
   }

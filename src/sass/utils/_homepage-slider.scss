@@ -1,4 +1,5 @@
 .slider-about-thumb {
+    width: 100%;
     @include tablet {
         position: absolute;
         width: 428px;
@@ -13,10 +14,17 @@
   }
 }
 
+.slider-about-thumb .slick-list {
+    width: 100%;
+}
+
 .slider-about-thumb .slider-about {
     position: relative;
     right: -69px;
-    width: 330px;
+    width: 86%;
+    @include mobile {
+        width: 330px;
+    }
     @include tablet {
         width: 428px;
         right: 0;
@@ -97,3 +105,73 @@
 
 }
 
+// MIRRORED
+
+.slider-about-thumb.slider-about-thumb--mirrored {
+    width: 100%;
+    @include tablet {
+        position: absolute;
+        width: 428px;
+        bottom: 96px;
+        left: 0;
+    }
+
+  @include desktop {
+  bottom: 118px;
+  right: 15px;
+  width: 548px;
+  }
+}
+
+.slider-about-thumb--mirrored .slider-about {
+    position: relative;
+    left: -15px;
+    width: 86%;
+    @include mobile {
+        width: 330px;
+    }
+    @include tablet {
+        width: 428px;
+        left: 0;
+    }
+    @include desktop {
+        width: 548px;
+  }
+}
+
+.slider-about-thumb--mirrored .homepage-slider .slick-track {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    @media screen and (max-width: 1023px) {
+        left: 85px;
+    }
+    @include tablet {
+      gap: 40px;
+    }
+}
+
+  .about-hotel__slider .slick-arrow.slick-prev {
+    background-image: url(../images/arrow-left.svg);
+    background-repeat: no-repeat;
+    left: auto;
+    left: 15px;
+    @include tablet {
+        left: 0;
+    }
+    @include desktop {
+      left: 0;
+    }
+  }
+  .about-hotel__slider .slick-arrow.slick-next {
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    left: 79px;
+
+    @include tablet {
+      left: 64px;
+    }
+    @include desktop {
+      left: 64px;
+    }
+  }

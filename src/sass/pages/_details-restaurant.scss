@@ -1,4 +1,6 @@
 .details-restaurant {
+    padding-top: 24px;
+    padding-bottom: 40px;
   max-width: 414px;
   max-height: 735px;
   margin: 0px auto;
@@ -11,6 +13,8 @@
         background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/mobile/hmpg-8-mb@2x.jpg');
 }
   @include tablet {
+    padding-top: 48px;
+    padding-bottom: 96px;
     max-width: 1024px;
     max-height: 620px;
     background-image:  linear-gradient($heroBgColor, $heroBgColor), url('../images/home/tablet/hmpg-8-tb.jpg');
@@ -98,10 +102,15 @@
 
 .buttons-list {
     text-align: center;
+    flex-grow: 1;
     @include tablet {
         margin-right: 29px;
     }
     @include desktop {
         margin-right: 32px;
     }
+}
+
+.buttons-list__item:not(:last-child) {
+    margin-bottom: 16px;
 }
