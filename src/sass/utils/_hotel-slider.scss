@@ -1,0 +1,176 @@
+.overflow-hidden {
+  @media screen and (max-width: 1023px) {
+    overflow: hidden;
+  }
+}
+
+// LEFT SLIDER
+
+.hotel-slider {
+  right: 35%;
+  min-width: 0;
+  position: relative;
+  margin-bottom: 72px;
+
+  @include tablet {
+    margin-bottom: 0;
+    right: 0;
+  }
+
+  &__item {
+    width: 194px;
+
+    @include desktop {
+      width: 254px;
+    }
+  }
+  & .slick-list {
+    width: 404px;
+
+    @include tablet {
+      width: 428px;
+    }
+    @include desktop {
+      width: 548px;
+    }
+  }
+
+  & .slick-track {
+    display: flex;
+    gap: 16px;
+    @include tablet {
+      gap: 40px;
+    }
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 120%;
+    z-index: 10;
+
+    @include tablet {
+      top: 125%;
+    }
+    @include desktop {
+      top: 120%;
+    }
+  }
+  & .slick-arrow.slick-prev {
+    background-image: url(../images/arrow-left.svg);
+    background-repeat: no-repeat;
+    left: 35%;
+
+    @include tablet {
+      left: 77%;
+    }
+    @include desktop {
+      left: 82%;
+    }
+  }
+  & .slick-arrow.slick-next {
+    background-image: url(../images/arrow-right.svg);
+    background-repeat: no-repeat;
+    left: 50%;
+
+    @include tablet {
+      left: 91%;
+    }
+    @include desktop {
+      left: 95%;
+    }
+  }
+  & .slick-prev,
+  & .slick-next {
+    width: 32px;
+    height: 32px;
+  }
+
+  & .slick-prev:before,
+  & .slick-next:before {
+    font-size: 0;
+  }
+}
+
+// RIGHT SLIDER
+
+.hotel-slider-right {
+  left: 30%;
+  min-width: 0;
+  position: relative;
+  margin-bottom: 72px;
+
+  @include tablet {
+    margin-bottom: 0;
+    left: 0;
+  }
+
+  &__item {
+    width: 194px;
+
+    @include desktop {
+      width: 254px;
+    }
+  }
+  & .slick-list {
+    overflow: hidden;
+    width: 404px;
+
+    @include tablet {
+      width: 428px;
+    }
+    @include desktop {
+      width: 548px;
+    }
+  }
+
+  & .slick-track {
+    display: flex;
+    gap: 16px;
+    @include tablet {
+      gap: 40px;
+    }
+  }
+
+  & .slick-arrow {
+    position: absolute;
+    top: 120%;
+    z-index: 10;
+
+    @include tablet {
+      top: 125%;
+    }
+    @include desktop {
+      top: 120%;
+    }
+  }
+  & .slick-arrow.slick-prev {
+    background-image: url(../images/gray_arrow-left.svg);
+    background-repeat: no-repeat;
+    left: 44%;
+
+    @include tablet {
+      left: 0%;
+    }
+  }
+  & .slick-arrow.slick-next {
+    background-image: url(../images/gray_arrow-right.svg);
+    background-repeat: no-repeat;
+    left: 62%;
+
+    @include tablet {
+      left: 15%;
+    }
+    @include desktop {
+      left: 12%;
+    }
+  }
+  & .slick-prev,
+  & .slick-next {
+    width: 32px;
+    height: 32px;
+  }
+  & .slick-prev:before,
+  & .slick-next:before {
+    font-size: 0;
+  }
+}
