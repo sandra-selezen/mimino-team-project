@@ -1,0 +1,250 @@
+.contact {
+  padding-top: 36px;
+  padding-bottom: 32px;
+  background: $primaryBgColor;
+
+
+  @include tablet {
+    height: 521px;
+    padding-top: 56px;
+    padding-bottom: 32px;
+    .container {
+      display: flex;
+    }
+  }
+
+  @include desktop{
+    padding-top: 56px;
+    padding-bottom: 74px;
+  }
+}
+  
+.contact__wrap {
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+  
+.contact__title {
+  margin-bottom: 12px;
+
+  font-family: 'Film P3';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.078;
+  letter-spacing: 0.3em;
+  color: $secondaryTitleColor;
+
+  @include tablet {
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.078;
+  }
+
+  @include desktop{
+    margin-bottom: 16px;
+  }
+}
+  
+  // "Ресторанно-готельний комплекс"
+
+.contact__title-name {
+  margin-bottom: 16px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: $primaryTextColor;
+
+  @include tablet {
+    margin-bottom: 52px;
+  }
+
+  @include desktop {
+    margin-bottom: 40px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}
+  
+  // "Ресторан", "Готель"
+
+.contact__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $secondaryAccentColor;
+}
+  
+  // Налаштування блоків
+
+.contact__item {
+  display: block;
+  align-items: center;
+  align-content: center;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include mobile {
+    display: flex;
+  }
+
+  @include tablet {
+    display: block;
+  }
+
+  > div {
+    display: flex;
+
+    background: $mainLightColor;
+    border: 0.5px solid $accentColor;
+    border-radius: 2px;
+    fill: $secondaryAccentColor;
+
+    > a + a {
+      margin-left: 12px;
+    }
+  }
+}
+  
+.contact__list {
+  display: block;
+
+  @include tablet {
+    display: block;
+  }
+}
+
+  // Розміри блоків
+  
+.contact__box-1 {
+  width: 144px;
+  height: 40px;
+  margin-left: 0px;
+
+  @include mobile {
+    margin-left: 22px;
+  }
+
+  @include tablet {
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+}
+  
+.contact__box-2 {
+  width: 264px;
+  height: 40px;
+
+
+  @include mobile {
+    margin-left: 54px;
+  }
+
+  @include tablet {
+    margin-left: 0px;
+    margin-top: 8px;
+    margin-bottom: 48px;
+  }
+}
+  
+.contact__box-3 {
+  width: 260px;
+  height: 76px;
+  margin-left: 0px;
+  padding-right: 33px;
+
+  @include mobile {
+    margin-left: 124px;
+  }
+
+  @include tablet {
+    width: 285px;
+    height: 56px;
+    margin: 0px;
+    padding-right: 0px;
+  }
+}
+  
+  // Шрифти
+  
+.contact__box-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+
+  color: $primaryTitleColor;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+}
+  
+.contact__location-text {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+
+  @include tablet {
+    padding-right: 0px;
+  }
+}
+
+  // Іконки
+  
+.contact__icon {
+margin-left: 8px;
+margin-top: 9px;
+margin-right: 8px;
+margin-bottom: 7px;
+}
+
+.contact__icon-location {
+margin-left: 10px;
+margin-top: 26px;
+margin-right: 10px;
+margin-bottom: 26px;
+}
+
+.contact__map {
+  margin-left: auto;
+}
+
+.map {
+  width: 384px;
+  height: 220px;
+
+  border: 1px solid #BABABA;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+
+  @include tablet {
+    width: 535px;
+    height: 412px;
+  }
+
+  @include desktop {
+    width: 634px;
+    height: 412px;
+  }
+
+}
+
+
+

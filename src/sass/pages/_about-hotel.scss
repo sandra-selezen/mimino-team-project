@@ -1,0 +1,69 @@
+.about-hotel__container {
+    @extend .about-restaurant__container;
+}
+
+.about-hotel__subtitle {
+    @extend .about-restaurant__subtitle;
+    text-align: right;
+}
+
+.about-hotel__logo {
+    @extend .about-restaurant__logo;
+    text-align: right;
+}
+
+.info-card--mirrored:first-child .info-card__description {
+    margin-left: auto;
+}
+
+.info-card--mirrored:first-child .info-card__thumb {
+  margin-right: auto;
+    margin-left: 0;
+  width: 244px;
+  @include tablet {
+    position: absolute;
+    top: -32px;
+    left: 65px;
+    margin-left: 0;
+    width: 400px;
+  }
+  @include desktop {
+    top: -33px;
+    left: 95px;
+    width: 460px;
+  }
+}
+
+.info-card--mirrored:nth-child(2n) {
+  flex-direction: row;
+}
+
+.info-card--mirrored:nth-child(2n) .info-card__description {
+  margin-right: 20px;
+  margin-left: 0;
+  @include tablet {
+    margin-right: 48px;
+    margin-left: 0;
+  }
+  @include desktop {
+    margin-right: 32px;
+    margin-left: 0;
+  }
+}
+
+.info-card--mirrored:nth-child(2n + 3) .info-card__description {
+    margin-left: 20px;
+    margin-right: 0;
+  @include tablet {
+    margin-left: 48px;
+    margin-right: 0;
+  }
+  @include desktop {
+    margin-left: 32px;
+    margin-right: 0;
+  }
+}
+
+.slider-about-thumb--mirrored {
+  
+}
