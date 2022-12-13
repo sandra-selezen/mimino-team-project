@@ -43,3 +43,4 @@ $('.restaurant-slider').slick({
   adaptiveHeight: true,
   variableWidth: true,
 });
+

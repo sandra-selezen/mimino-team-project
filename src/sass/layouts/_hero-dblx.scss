@@ -1,0 +1,117 @@
+.hotel__title_hero {
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(32/28);
+    letter-spacing: 0.05em;
+    padding-top: 483px;
+    margin-bottom: 14px;
+    color: $mainLightColor;
+@include tablet{
+    padding-top: 468px;
+    margin-bottom: 24px;
+}
+@include desktop {
+    padding-top: 524px;
+    font-size: 36px;
+}
+}
+
+.hotel__aftetitle_hero {
+    font-size: 12px;
+    margin-bottom: 17px;
+    max-width: 325px;
+    color: $mainLightColor;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+
+    @include tablet {
+      max-width: 439px;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      max-width: 400px;
+      font-weight: 700;
+    }
+ 
+}
+
+.hero-btn-soc {
+display: inline-flex;
+flex-direction: row-reverse;
+align-items: center;
+gap: 42px;
+}
+
+.hero__socials-hotel_hero {
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+
+    @include tablet{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    row-gap: 23px;
+    top: 659px;
+    right: 490px;
+    }
+    @include desktop{
+        display: none;
+    }
+}
+
+.icon-location{
+    fill:#F3C653;
+    width: 24px;
+    height: 24px;
+    }
+
+.button-primary-hotel{
+    @include tablet{
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 608px;
+    }
+    @include desktop{
+        top: 594px;
+    }
+        }
+
+    .rest__address_hero {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2px 5px 2px 5px;
+    margin-left: auto;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $addressColor;
+    border: 1px solid $accentBorderColor;
+    border-radius: 2px;
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    @media screen and (max-width: 413px) {
+    left: 90px;
+     }
+    @include tablet{
+        width: 285px;
+    font-size: 16px;
+    top: 640px;
+    left: 0;
+    }
+    @include desktop{
+    display: none;
+    }
+    }
