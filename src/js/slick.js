@@ -34,10 +34,3 @@ $('.homepage-slider-details').slick({
   adaptiveHeight: true,
   variableWidth: true,
 });
-
-$('.room-slider').slick({
-  dots: false,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-});
