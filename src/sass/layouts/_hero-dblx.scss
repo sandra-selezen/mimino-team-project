@@ -86,18 +86,32 @@ row-gap: 10px;
     }
         }
 
-.rest__address_hero {
-position: absolute;
-top: 55px;
-left: 150px;
-@media screen and (max-width: 413px) {
-left: 90px;
-  }
-@include tablet{
-top: 640px;
-left: 0;
-}
-@include desktop{
-display: none;
-}
-}
+    .rest__address_hero {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 2px 5px 2px 5px;
+    margin-left: auto;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: $addressColor;
+    border: 1px solid $accentBorderColor;
+    border-radius: 2px;
+    position: absolute;
+    top: 55px;
+    left: 150px;
+    @media screen and (max-width: 413px) {
+    left: 90px;
+     }
+    @include tablet{
+        width: 285px;
+    font-size: 16px;
+    top: 640px;
+    left: 0;
+    }
+    @include desktop{
+    display: none;
+    }
+    }
