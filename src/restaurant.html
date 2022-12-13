@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ресторан</title>
 
-    <link rel="stylesheet" href="./sass/main.scss">
-</head>
-<body>
+    <!-- SLICK -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./sass/main.scss" />
+  </head>
+  <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
     <main>
-        <include src="./partials/restaurant/hero.html"></include>
-        <include src="./partials/restaurant/about-kitchen.html"></include>
-        <include src="./partials/restaurant/menu.html"></include>
+      <include src="./partials/restaurant/hero.html"></include>
+      <include src="./partials/restaurant/about-kitchen.html"></include>
+      <include src="./partials/restaurant/menu.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
 
     <!-- MODAL WINDOWS-->
     <include src="./partials/book-table.html"></include>
-</body>
+
+    <!-- SLICK jQuery -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- SLICK -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- BASE JS -->
+
+    <script type="module" src="./js/slick.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
 </html>
