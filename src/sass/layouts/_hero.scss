@@ -1,3 +1,4 @@
+
 .hero{
 
     background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), 
@@ -45,11 +46,17 @@ position: relative;
 .rest__address {
 position: absolute;
 top: 55px;
-left: 170px;
+left: 150px;
+@media screen and (max-width: 413px) {
+left: 90px;
+  }
 @include tablet{
 top: 565px;
 left: 0;
-  
+  @include desktop{
+    top: 565px;
+    left: 85px; 
+  }
 }
 
     width: 210px;
@@ -154,14 +161,16 @@ padding-top: 130px;
     position: absolute;
     bottom: -135px;
     left: 0;
-
+    @media screen and (max-width: 413px) {
+        bottom: -85px;
+      }
     @include tablet{
     bottom: -85px;
     left: 0;
     }
     @include desktop{
-        left: 1000px;
-        bottom: 560px;
+        bottom: 565px;
+        left: 1050px;
     }
     
 }
