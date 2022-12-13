@@ -1,0 +1,110 @@
+.about-kitchen .slider-about-thumb {
+  width: 100%;
+  @include tablet {
+    position: absolute;
+    width: 432px;
+    bottom: 96px;
+    right: 28px;
+  }
+
+  @include desktop {
+    bottom: 104px;
+    right: 15px;
+    width: 530px;
+  }
+}
+
+.slider-about-thumb .slick-list {
+  width: 100%;
+}
+
+.slider-about-thumb .slider-about {
+  position: relative;
+  right: -69px;
+  width: 86%;
+  @include mobile {
+    width: 330px;
+  }
+  @include tablet {
+    width: 432px;
+    right: 0;
+  }
+  @include desktop {
+    width: 530px;
+  }
+}
+
+.restaurant-slider .slick-track {
+  display: flex;
+  gap: 25px;
+  @include tablet {
+    gap: 44px;
+  }
+  @include desktop {
+    gap: 40px;
+  }
+}
+
+.restaurant-slider .slider-about {
+  width: 245px;
+  @include tablet {
+    width: 194px;
+  }
+  @include desktop {
+    width: 254px;
+  }
+}
+
+.restaurant-slider .slick-arrow {
+  position: absolute;
+  bottom: -62px;
+  top: auto;
+  z-index: 10;
+
+  @include tablet {
+    top: 125%;
+  }
+  @include desktop {
+    top: 120%;
+  }
+}
+.restaurant-slider .slick-arrow.slick-prev {
+  background-image: url(../images/arrow-left.svg);
+  background-repeat: no-repeat;
+  left: auto;
+  right: 79px;
+  @include tablet {
+    right: 64px;
+  }
+  @include desktop {
+    right: 64px;
+  }
+}
+.restaurant-slider .slick-arrow.slick-next {
+  background-image: url(../images/arrow-right.svg);
+  background-repeat: no-repeat;
+  right: 15px;
+
+  @include tablet {
+    right: 0;
+  }
+  @include desktop {
+    right: 0;
+  }
+}
+.restaurant-slider .slick-prev,
+.restaurant-slider .slick-next {
+  width: 32px;
+  height: 32px;
+}
+
+.restaurant-slider .slick-prev:before,
+.restaurant-slider .slick-next:before {
+  font-size: 0;
+}
+
+.slider-about .slick-arrow.slick-next {
+}
+
+.slider-about-thumb .slick-list {
+}

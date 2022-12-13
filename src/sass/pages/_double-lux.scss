@@ -22,7 +22,7 @@ padding-bottom: 32px;
                 font-weight: 400;
                 font-size: 22px;
                 line-height: 1.68;
-                color: #000000;
+                color: $mainDarkColor;
 
     }
     @include mobile {
@@ -32,7 +32,7 @@ font-family: 'Times New Roman';
     font-weight: 400;
     font-size: 32px;
     line-height: 1.15;
-    color: #000000;
+    color: $mainDarkColor;
     }
 }
 .room__info-description {
@@ -45,7 +45,7 @@ font-family: 'Times New Roman';
             line-height: 1.5;
             letter-spacing: 0.02em;
         
-            color: #7A7A7A;
+            color: $secondaryTextColor;
     }
     @include mobile {
         margin-bottom: 32px;
@@ -56,7 +56,7 @@ font-family: 'Times New Roman';
             line-height: 1.25;
             letter-spacing: 0.02em;
         
-            color: #7A7A7A;
+            color: $secondaryTextColor;
     }
 
          @include tablet {
@@ -71,7 +71,7 @@ font-family: 'Times New Roman';
             font-weight: 700;
             font-size: 14px;
             line-height: 2;
-            color: #000000;
+            color: $mainDarkColor;
     }
     @include mobile {
         margin-bottom: 16px;
@@ -80,7 +80,7 @@ font-family: 'Times New Roman';
                     font-weight: 700;
                     font-size: 24px;
                     line-height: 1.16;
-                    color: #000000;
+                    color: $mainDarkColor;
                 }
     }
 
@@ -102,7 +102,7 @@ font-family: 'Times New Roman';
                 line-height: 1.5;
                 letter-spacing: 0.02em;
             
-                color: #7A7A7A;
+                color: $secondaryTextColor;
     }
     @include mobile {
     font-family: 'Montserrat';
@@ -112,7 +112,7 @@ font-family: 'Times New Roman';
         line-height: 1.25;
         letter-spacing: 0.02em;
     
-        color: #7A7A7A;
+        color: $secondaryTextColor;
     }
     @include tablet {
         max-width: 400px;
@@ -146,37 +146,38 @@ font-family: 'Times New Roman';
 }
 }
 .room__booking-button {
+    transition: background .25s linear, border .25s linear;
         @media screen and (min-width:320px) and (max-width:413px) {
                 margin-bottom: 10px;
                 margin-top: 10px;
-                background-color: black;
+                background-color: $mainDarkColor;
                 width: 280px;
                 height: 54px;
                 border-radius: 25px;
-                border: 1px solid #F3C653;
+                border: 1px solid $accentColor;
                 font-family: 'Montserrat';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 1.5;
         
-                color: #FFFFFF;
+                color: $mainLightColor;
             }
 
     @include mobile {
         margin-bottom: 20px;
-        background-color: black;
+        background-color: $mainDarkColor;
         width: 384px;
         height: 64px;
         border-radius: 25px;
-        border: 1px solid #F3C653;
+        border: 1px solid $accentColor;
         font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 1.2;
         
-            color: #FFFFFF;
+            color: $mainLightColor;
     }
         @include tablet {
             margin-bottom: 32px;
@@ -187,6 +188,7 @@ font-family: 'Times New Roman';
 .room__back-link {
 
     display: flex;
+        transition: color .25s cubic-bezier(.4, 0, .2, 1);
 
     @media screen and (min-width:320px) and (max-width:413px) {
         
@@ -196,8 +198,8 @@ font-family: 'Times New Roman';
                 font-size: 12px;
                 line-height: 1.66;
                 letter-spacing: 0.02em;
-                color: #C79002;
-                fill: #C79002;
+                color: $secondaryAccentColor;
+                fill: $secondaryAccentColor;
                 margin-left: 16px;
             }
 
@@ -208,8 +210,8 @@ font-family: 'Times New Roman';
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.02em;
-        color: #C79002;
-        fill: #C79002;
+        color: $secondaryAccentColor;
+        fill: $secondaryAccentColor;
         margin-left: 16px;
     }
         @include tablet {
@@ -246,13 +248,13 @@ font-size: 20px;
 }
 .room__back-link:hover,
 .room__back-link:focus {
-    color: #F3C653;
-    fill: #F3C653;
+    color: $accentColor;
+    fill: $accentColor;
 }
     
  .room__booking-button:hover,
  .room__booking-button:focus {
-    background-color: #F3C653;
-    color: #000000;
+    background-color: $accentColor;
+    color: $mainDarkColor;
     cursor: pointer;
  }
