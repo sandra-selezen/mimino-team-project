@@ -127,7 +127,7 @@
   }
 }
 
-.info-card__thumb:not(:first-child) {
+.info-card:not(:first-child)  .info-card__thumb{
   @include desktop {
     box-shadow: none;
   }
