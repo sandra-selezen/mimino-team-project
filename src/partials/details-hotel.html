@@ -1,154 +1,164 @@
 <section class="details-hotel">
   <div class="container">
-    <p class="details-hotel__logo">Mіміно</p>
-    <h2 class="details-hotel__title">Ресторан</h2>
-    <p class="details-hotel__text">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit.
-    </p>
-    <ul class="slider-details">
-      <li class="slider-details__item">
-        <picture>
-          <source
-            srcset="
-              ./images/home/desktop/hmpg-20sl-ds.jpg    1x,
-              ./images/home/desktop/hmpg-20sl-ds@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/tablet/hmpg-20sl-tb.jpg    1x,
-              ./images/home/tablet/hmpg-20sl-tb@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/mobile/hmpg-20sl-mb.jpg    1x,
-              ./images/home/mobile/hmpg-20sl-mb@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-            type="image/jpeg"
-          />
-          <img
-            src="./images/home/mobile/hmpg-20sl-mb.jpg"
-            alt="номер готелю з ліжком і столом"
-            sizes="(min-width: 1024px) 270px, 274px"
-          />
-        </picture>
-      </li>
-      <li class="slider-details__item">
-        <picture>
-          <source
-            srcset="
-              ./images/home/desktop/hmpg-21sl-ds.jpg    1x,
-              ./images/home/desktop/hmpg-21sl-ds@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/tablet/hmpg-21sl-tb.jpg    1x,
-              ./images/home/tablet/hmpg-21sl-tb@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/mobile/hmpg-21sl-mb.jpg    1x,
-              ./images/home/mobile/hmpg-21sl-mb@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-            type="image/jpeg"
-          />
-          <img
-            src="./images/home/mobile/hmpg-21sl-mb.jpg"
-            alt="сніданок з стаканом апельсиновго соку"
-            width="162px"
-          />
-        </picture>
-      </li>
-      <li class="slider-details__item">
-        <picture>
-          <source
-            srcset="
-              ./images/home/desktop/hmpg-22sl-ds.jpg    1x,
-              ./images/home/desktop/hmpg-22sl-ds@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/tablet/hmpg-22sl-tb.jpg    1x,
-              ./images/home/tablet/hmpg-22sl-tb@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/mobile/hmpg-22sl-mb.jpg    1x,
-              ./images/home/mobile/hmpg-22sl-mb@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-            type="image/jpeg"
-          />
-          <img
-            src="./images/home/mobile/hmpg-22sl-mb.jpg"
-            alt="дівчина з валізою на рецепції"
-            sizes="(min-width: 1024px) 270px, 274px"
-          />
-        </picture>
-      </li>
-      <li class="slider-details__item">
-        <picture>
-          <source
-            srcset="
-              ./images/home/desktop/hmpg-20sl-ds.jpg    1x,
-              ./images/home/desktop/hmpg-20sl-ds@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/tablet/hmpg-20sl-tb.jpg    1x,
-              ./images/home/tablet/hmpg-20sl-tb@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-            type="image/jpeg"
-          />
-          <source
-            srcset="
-              ./images/home/mobile/hmpg-20sl-mb.jpg    1x,
-              ./images/home/mobile/hmpg-20sl-mb@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-            type="image/jpeg"
-          />
-          <img
-            src="./images/home/mobile/hmpg-20sl-mb.jpg"
-            alt="номер готелю з ліжком і столом"
-            sizes="(min-width: 1024px) 270px, 274px"
-          />
-        </picture>
-      </li>
-    </ul>
-    <ul class="buttons-list">
-      <li class="buttons-list__item">
-        <button type="button" class="button-primary" data-modal-open-book-room>
-          Забронювати номер
-        </button>
-      </li>
-      <li class="buttons-list__item">
-        <a href="./hotel.html" class="button-primary">Переглянути ціни</a>
-      </li>
-    </ul>
+    <div class="details-hotel__text-container">
+      <p class="details-hotel__logo">Mimiho</p>
+      <h2 class="details-hotel__title">Готель</h2>
+      <p class="details-hotel__text">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit.
+      </p>
+    </div>
+    <div class="details-hotel__thumb">
+      <div class="slider-details-thumb slider-details-thumb--mirrored">
+        <ul
+          class="slider-details slider-details--mirrored homepage-slider-details"
+        >
+          <li class="slider-details__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/home/desktop/hmpg-20sl-ds.jpg    1x,
+                  ./images/home/desktop/hmpg-20sl-ds@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/tablet/hmpg-20sl-tb.jpg    1x,
+                  ./images/home/tablet/hmpg-20sl-tb@2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/mobile/hmpg-20sl-mb.jpg    1x,
+                  ./images/home/mobile/hmpg-20sl-mb@2x.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/home/mobile/hmpg-20sl-mb.jpg"
+                alt="номер готелю з ліжком і столом"
+                sizes="(min-width: 1024px) 270px, 274px"
+              />
+            </picture>
+          </li>
+          <li class="slider-details__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/home/desktop/hmpg-21sl-ds.jpg    1x,
+                  ./images/home/desktop/hmpg-21sl-ds@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/tablet/hmpg-21sl-tb.jpg    1x,
+                  ./images/home/tablet/hmpg-21sl-tb@2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/mobile/hmpg-21sl-mb.jpg    1x,
+                  ./images/home/mobile/hmpg-21sl-mb@2x.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/home/mobile/hmpg-21sl-mb.jpg"
+                alt="сніданок з стаканом апельсиновго соку"
+                width="162px"
+              />
+            </picture>
+          </li>
+          <li class="slider-details__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/home/desktop/hmpg-22sl-ds.jpg    1x,
+                  ./images/home/desktop/hmpg-22sl-ds@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/tablet/hmpg-22sl-tb.jpg    1x,
+                  ./images/home/tablet/hmpg-22sl-tb@2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/mobile/hmpg-22sl-mb.jpg    1x,
+                  ./images/home/mobile/hmpg-22sl-mb@2x.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/home/mobile/hmpg-22sl-mb.jpg"
+                alt="дівчина з валізою на рецепції"
+                sizes="(min-width: 1024px) 270px, 274px"
+              />
+            </picture>
+          </li>
+          <li class="slider-details__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/home/desktop/hmpg-20sl-ds.jpg    1x,
+                  ./images/home/desktop/hmpg-20sl-ds@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/tablet/hmpg-20sl-tb.jpg    1x,
+                  ./images/home/tablet/hmpg-20sl-tb@2x.jpg 2x
+                "
+                media="(min-width: 1024px)"
+                type="image/jpeg"
+              />
+              <source
+                srcset="
+                  ./images/home/mobile/hmpg-20sl-mb.jpg    1x,
+                  ./images/home/mobile/hmpg-20sl-mb@2x.jpg 2x
+                "
+                media="(max-width: 1023px)"
+                type="image/jpeg"
+              />
+              <img
+                src="./images/home/mobile/hmpg-20sl-mb.jpg"
+                alt="номер готелю з ліжком і столом"
+                sizes="(min-width: 1024px) 270px, 274px"
+              />
+            </picture>
+          </li>
+        </ul>
+      </div>
+      <ul class="buttons-list buttons-list__details-hotel">
+        <li class="buttons-list__item">
+          <button type="button" class="button-primary" data-modal-open-book-table>
+            Забронювати столик
+          </button>
+        </li>
+        <li class="buttons-list__item">
+          <a href="./restaurant.html" class="button-primary"
+            >Переглянути меню</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

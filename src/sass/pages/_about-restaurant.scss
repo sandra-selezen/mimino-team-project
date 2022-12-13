@@ -1,0 +1,167 @@
+.about-restaurant__container {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 72px;
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 262px;
+  }
+  @include desktop {
+    padding-bottom: 225px;
+  }
+}
+
+.about-restaurant__subtitle {
+  // шрифт
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  line-height: 1.15;
+  color: $pretitleColor;
+
+  margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 1.16;
+    margin-bottom: 4px;
+  }
+}
+
+.about-restaurant__logo {
+  // шрифт
+  font-family: 'Film P3', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: $secondaryTitleColor;
+
+  margin-bottom: 12px;
+
+  @include tablet {
+    font-size: 64px;
+    margin-bottom: 24px;
+  }
+  @include desktop {
+    color: $primaryTitleColor;
+  }
+}
+
+.info-cards {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 32px;
+  }
+}
+
+.info-card {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.info-card:first-child {
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 142px;
+  }
+  @include desktop {
+    margin-bottom: 162px;
+  }
+}
+
+.info-card:nth-child(2n):not(:last-child) {
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+
+.info-card__description {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.info-card:first-child .info-card__description {
+  // шрифт
+  color: $primaryTextColor;
+
+  max-width: 258px;
+  margin-bottom: 28px;
+
+  @include tablet {
+    max-width: 439px;
+    margin-bottom: 0;
+  }
+}
+
+.info-card:first-child .info-card__thumb {
+  margin-left: auto;
+  width: 244px;
+  @include tablet {
+    position: absolute;
+    top: -32px;
+    right: 65px;
+    margin-left: 0;
+    width: 400px;
+  }
+  @include desktop {
+    top: -33px;
+    right: 95px;
+    width: 460px;
+  }
+}
+
+.info-card:nth-child(n + 2) .info-card__description {
+  color: $secondaryAccentColor;
+  max-width: 163px;
+  @include tablet {
+    max-width: 312px;
+  }
+}
+
+.info-card:nth-child(n + 2) {
+  display: flex;
+  align-items: center;
+}
+
+.info-card:nth-child(2n) {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.info-card:nth-child(2n) .info-card__description {
+  margin-left: 20px;
+  @include tablet {
+    margin-left: 48px;
+  }
+  @include desktop {
+    margin-left: 32px;
+  }
+}
+
+.info-card:nth-child(2n + 3) .info-card__description {
+  margin-right: 20px;
+  @include tablet {
+    margin-right: 48px;
+  }
+  @include desktop {
+    margin-right: 32px;
+  }
+}
+
+.info-card:nth-child(n + 2) .info-card__thumb {
+  width: 200px;
+  @include tablet {
+    width: 350px;
+  }
+  @include desktop {
+    width: 460px;
+  }
+}
