@@ -45,22 +45,25 @@ position: relative;
 }
 .rest__address {
 position: absolute;
-top: 55px;
-left: 150px;
+top: 60px;
+left: 175px;    
+width: 210px;
+height: 47px;
 @media screen and (max-width: 413px) {
 left: 90px;
   }
 @include tablet{
-top: 565px;
+    width: 285px;
+    height: 56px;   
+top: 570px;
 left: 0;
   @include desktop{
-    top: 565px;
-    left: 85px; 
+    top: 553px;
+    left: 0; 
   }
 }
 
-    width: 210px;
-    height: 47px;
+
     
     display: flex;
     flex-wrap: nowrap;
@@ -84,8 +87,7 @@ left: 0;
         margin-right: 8px;
     }
     .hero__title{
-        display: flex;
-        justify-content: center;
+
     font-family: 'Film P3';
     font-weight: 700;
     font-size: 96px;
@@ -94,31 +96,37 @@ left: 0;
     text-transform: uppercase;
 
     color: #FFFFFF;
-padding-top: 130px;
-    margin-bottom: 24px;
+    padding-top: 181px;
+    max-width: 303px;
+    margin: 0 auto;
+    
 @include tablet{
     padding-top: 188px;
     margin-bottom: 16px;
 }
+@include desktop{
+    padding-top: 164px;
+    margin-bottom: 32px;
+}
     }
 .hero__pretitle{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
     letter-spacing: 0.02em;
     
     color: #FFFFFF;
-
+    margin-top: 24px;
     margin-bottom: 40px;
     @include tablet{
     margin-bottom: 56px;}
+    @include desktop{
+    margin-bottom: 56px;}
 }
-.hero__text{
-    display: flex;
-    justify-content: center;
 
+.hero__text{
+    text-align: center;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
@@ -159,7 +167,7 @@ padding-top: 130px;
 .hero__socials{
     display: flex;
     position: absolute;
-    bottom: -135px;
+    bottom: -80px;
     left: 0;
     @media screen and (max-width: 413px) {
         bottom: -85px;
@@ -168,14 +176,20 @@ padding-top: 130px;
     bottom: -85px;
     left: 0;
     }
-    @include desktop{
-        bottom: 565px;
-        left: 1050px;
-    }
-    
+@include desktop {
+    display: none;
+}
+ z-index: 20;   
+}
+.hero__socials__desktop{
+    display: flex;
+margin-left: 61px;
+    @media screen and (max-width: 1279px) {
+    display: none;
+      }
 }
 .hero__socials__link:not(:last-child){
-    margin-right: 23px;
+    margin-right: 20px;
 }
 
 .hero__soc__icon{
