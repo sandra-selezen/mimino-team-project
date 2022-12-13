@@ -118,6 +118,21 @@
   }
 }
 
+.info-card__thumb {
+  box-shadow: 2px 2px 60px 2px $primaryShadowColor;
+  border-radius: 2px;
+  overflow: hidden;
+  @include tablet {
+    box-shadow: 5px 5px 70px 17px $primaryShadowColor;
+  }
+}
+
+.info-card__thumb:not(:first-child) {
+  @include desktop {
+    box-shadow: none;
+  }
+}
+
 .info-card:nth-child(n + 2) .info-card__description {
   color: $secondaryAccentColor;
   max-width: 163px;
@@ -164,4 +179,9 @@
   @include desktop {
     width: 460px;
   }
+}
+
+.slider-about__item {
+  border-radius: 2px;
+  overflow: hidden;
 }
