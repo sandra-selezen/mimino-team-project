@@ -153,6 +153,15 @@ select::-ms-expand {
     width: 288px;
   }
 }
+.modal-wrap-room-price {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+ margin-right: 304px;
+    width: 288px;
+  }
+}
 .user-name-text {
   font-family: 'Montserrat';
   font-style: normal;
