@@ -1,7 +1,7 @@
 .menu{
-background: #fffdee;
+    background: $secondaryBgColor;
     padding-top: 32px;
-    padding-bottom: 32;
+    padding-bottom: 32px;
 
     @include tablet {
         padding-top: 58px;
@@ -13,8 +13,8 @@ background: #fffdee;
     }
 }
 
-.menu__wrap{
-@include tablet {
+.menu__wrap {
+    @include tablet {
         flex-basis: calc((100% - 90px) / 2);
     }
 
@@ -23,106 +23,84 @@ background: #fffdee;
     }
 }
 
-
-  .menu__container {
-    padding:58px 32px 15px;
-
-
-      @media screen and (min-width: 1024px) {
-        padding: 58px 47px 40px;
-
-      }
-
-      @media screen and (min-width: 1280px) {
-        padding: 58px 85px 60px;
-
-      }
-    }
-    
-
- .menu__title {
-    font-family: Times New Roman bolt;
+.menu__title {
+    font-family: 'Times New Roman';
     margin-bottom: 32px;
     font-weight: 700;
     font-size: 32px;
-        line-height: 1.16;
-        text-transform: uppercase;
- color: #000000;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: $mainDarkColor;
     
- @media screen and (min-width: 414px) {
- font-size: 32px;
- }    
-             @media screen and (min-width: 1024px) {
-                 margin-bottom: 20px;
-             }
-         }
+    @media screen and (min-width: 414px) {
+        font-size: 32px;
+    }    
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 20px;
+    }
+}
 
 .menu__flex {
-        gap: 140px;
-
-        @include tablet {
-            gap: 90px;
-        }
-
-        @include desktop {
-            display: flex;
-            
-        }
+    @include tablet {
+        display: flex;
+        gap: 90px;
     }
 
+    @include desktop {
+        gap: 140px;
+    }
+}
 
-.dishes__table{
-        width: 100%;
-            max-width: 384px;
-            border-collapse: collapse;
-            padding: 0;
-            margin-bottom: 16px;
-        
-            @media screen and (min-width: 1024px) {
-                max-width: 420px;
-                margin-bottom: 20px;
-            }
-        
-            @media screen and (min-width: 1280px) {
-                max-width: 485px;
-            }
+.dishes__table {
+    width: 100%;
+    max-width: 384px;
+    border-collapse: collapse;
+    padding: 0;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 420px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 485px;
+    }
 }
 
 .dishes__basis{
-    font-family: 'Times New Roman bolt';
-        margin: 16px 0 16px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.5;
-        color: #000000;
-        text-align: left;
-    
-        @media screen and (min-width: 1024px) {
-            margin: 20px 0 20px;
-        }
+    font-family: 'Times New Roman';
+    margin: 16px 0 16px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $mainDarkColor;
+    text-align: left;
+
+    @media screen and (min-width: 1024px) {
+        margin: 20px 0 20px;
+    }
 }
 
 .menu__list{
     display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    
-        width: 300px;
-    
-        max-width: 384px;
-        gap: 8px;
-    
-    
-    
-        @media screen and (min-width: 1024px) {
-            max-width: 420px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            max-width: 485px;
-            gap: 12px;
-        }
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 300px;
+
+    max-width: 384px;
+    gap: 8px;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 420px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 485px;
+        gap: 12px;
+    }
 }
 
 .menu__card {
@@ -131,26 +109,26 @@ background: #fffdee;
     align-items: center;
     text-align: left;
 
-    color: #000000;
+    color: $mainDarkColor;
 
 }
 
 .dishes__denotation{
     width: 100vw;
-        max-width: 225px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 17px;
-        letter-spacing: 0.02em;
-        color: #000000;
-        
-            @media screen and (min-width: 1024px) {
-                max-width: 260px;
-            }
+    max-width: 225px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: $mainDarkColor;
+    
+    @media screen and (min-width: 1024px) {
+        max-width: 260px;
+    }
 }
 
-.dishes__storage{
-font-family: 'Montserrat';
+.dishes__storage {
+    font-family: 'Montserrat';
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
@@ -158,86 +136,80 @@ font-family: 'Montserrat';
     letter-spacing: 0.02em;
 }
 
-.dishes__weight{
-        text-align: end;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 1.21;
-        letter-spacing: 0.02em;
-        color: #000000;
+.dishes__weight {
+    text-align: end;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $mainDarkColor;
 }
 
-.dishes__price{
-        text-align: end;
-        max-width: 62px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.21;
-        letter-spacing: 0.02em;
-        color: #000000;
+.dishes__price {
+    text-align: end;
+    max-width: 62px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $mainDarkColor;
 
-    @media screen and (min-width: 1024px){
-max-width: 70px;
+    @media screen and (min-width: 1024px) {
+    max-width: 70px;
     }
 }
 
+.menu__button {
+    display: block;
+    padding: 15px 24px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 auto;
+    background-color: $mainDarkColor;
+    border: 2px solid $mainLightColor;
+    border-radius: 25px;
+    color: $accentColor;
+    width: 100%;
+    max-width: 236px;
+    margin-top: 32px;
 
-  .menu__button {
-      display: block;
-      padding: 15px 24px 14px;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.25;
-      margin: 0 auto;
-      background: #000000;
-      border: 2px solid #fff;
-      border-radius: 25px;
-      color: #F3C653;
-      width: 100%;
-      max-width: 236px;
-      margin-top: 32px;
-
-      cursor: pointer;
-      transition: background 250ms linear, border 250ms linear;
+    cursor: pointer;
+    transition: background-color $duration $timingFunction, border $duration $timingFunction;
 
     @media screen and (min-width: 1024px) {
-            margin-right: 0;
-            margin-top: 20px;
-        }
-  }
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
 
-          .menu__button:hover,
-          .menu__button:focus {
-          background: #fff;
-          border: 2px solid #F3C653;
-          
-      }
+.menu__button:hover,
+.menu__button:focus {
+    background-color: $mainLightColor;
+    border: 2px solid $accentColor;
 
-      
-  
+}
 
-  .menu__indent {
-      border-bottom: 8px solid transparent;
+.menu__indent {
+    border-bottom: 8px solid transparent;
 
     @media screen and (min-width: 1280px) {
-          border-bottom: 12px solid transparent;
-      }
-  }
+            border-bottom: 12px solid transparent;
+        }
+    }
 
-  .menu__indent-x {
-      border-bottom: 4px solid transparent;
-  }
+.menu__indent-x {
+    border-bottom: 4px solid transparent;
+}
 
-  .menu__indent-y {
-      border-bottom: 8px solid transparent;
+.menu__indent-y {
+    border-bottom: 8px solid transparent;
 
     @media screen and (min-width: 1024px) {
-          border-bottom: 15px solid transparent;
-      }
+        border-bottom: 15px solid transparent;
+    }
 
-          @media screen and (min-width: 1280px) {
-          border-bottom: 19px solid transparent;
-      }
-  }
-  
-  
+    @media screen and (min-width: 1280px) {
+        border-bottom: 19px solid transparent;
+    }
+}
