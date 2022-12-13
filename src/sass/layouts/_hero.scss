@@ -23,7 +23,6 @@
     url(../images/home/tablet/hmpg-1-tb@2x.jpg);
     }  
 }
-
     @include desktop {
     background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
     url(../images/home/desktop/hmpg-1-ds.jpg);
@@ -71,7 +70,6 @@
     letter-spacing: 0.01em;
     
     color: $addressColor;
-    
     border: 1px solid $accentBorderColor;
     border-radius: 2px;
 }
@@ -93,11 +91,11 @@
     max-width: 303px;
     margin: 0 auto;
     
-    @include tablet{
+    @include tablet {
         padding-top: 188px;
         margin-bottom: 16px;
     }
-    @include desktop{
+    @include desktop {
         padding-top: 164px;
         margin-bottom: 32px;
     }
@@ -109,7 +107,7 @@
     font-weight: 600;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    
+
     color: $mainLightColor;
     margin-top: 24px;
     margin-bottom: 40px;
@@ -130,7 +128,8 @@
     line-height: 1.16;
     letter-spacing: 0.05em;
     text-transform: uppercase; 
-
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     color: $mainLightColor;
     margin-bottom: 113px;
     @include tablet {
@@ -160,6 +159,7 @@
     margin-bottom: 0;
     }
 }
+
 .hero__socials {
     display: flex;
     position: absolute;
@@ -176,10 +176,15 @@
         display: none;
     }
     z-index: 20;   
+    @include desktop {
+        display: none;
+    }
+    z-index: 20;   
 }
 
 .hero__socials__desktop {
     display: flex;
+    margin-left: 61px;
     margin-left: 61px;
     @media screen and (max-width: 1279px) {
     display: none;
@@ -195,6 +200,7 @@
     width: 22px;
     height: 22px;
 }
+
 .icon-location {
     fill:$accentColor;
     width: 24px;
