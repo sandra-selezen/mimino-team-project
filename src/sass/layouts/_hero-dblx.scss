@@ -50,7 +50,7 @@ align-items: center;
 gap: 42px;
 }
 
-.hero__socials-hotel {
+.hero__socials-hotel_hero {
 display: flex;
 flex-direction: column;
 row-gap: 10px;
@@ -86,7 +86,7 @@ row-gap: 10px;
     }
         }
 
-.rest__address {
+.rest__address_hero {
 position: absolute;
 top: 55px;
 left: 150px;
