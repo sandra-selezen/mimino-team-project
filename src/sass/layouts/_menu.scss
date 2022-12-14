@@ -1,0 +1,222 @@
+.menu {
+    background: $secondaryBgColor;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include tablet {
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    @include desktop {
+        padding-bottom: 60px;
+    }
+}
+
+.menu__wrap {
+    @include tablet {
+        flex-basis: calc((100% - 90px) / 2);
+    }
+
+    @include desktop {
+        flex-basis: calc((100% - 140px) / 2);
+    }
+}
+
+.menu__title {
+    margin-bottom: 32px;
+    font-family: 'Times New Roman';
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: $mainDarkColor;
+    
+    @media screen and (min-width: 414px) {
+        font-size: 32px;
+    }    
+    @include tablet {
+        margin-bottom: 40px;
+    }
+}
+
+.menu__flex {
+    @include tablet {
+        display: flex;
+        gap: 90px;
+    }
+
+    @include desktop {
+        gap: 140px;
+    }
+}
+
+.dishes__table {
+    width: 100%;
+    max-width: 384px;
+    border-collapse: collapse;
+    padding: 0;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 420px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 485px;
+    }
+}
+
+.dishes__basis {
+    margin-bottom: 16px;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $mainDarkColor;
+    text-align: left;
+
+    @include tablet {
+        margin-bottom: 20px;
+    }
+}
+
+// .menu__list {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+
+//     width: 300px;
+
+//     max-width: 384px;
+//     gap: 8px;
+
+//     @media screen and (min-width: 1024px) {
+//         max-width: 420px;
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         max-width: 485px;
+//         gap: 12px;
+//     }
+// }
+
+.menu__card {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+
+    color: $mainDarkColor;
+
+}
+
+.dishes__denotation {
+    width: 100vw;
+    max-width: 225px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $mainDarkColor;
+    
+    @media screen and (min-width: 1024px) {
+        max-width: 260px;
+    }
+}
+
+.dishes__storage {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+
+    letter-spacing: 0.02em;
+}
+
+.dishes__weight {
+    text-align: end;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $mainDarkColor;
+}
+
+.dishes__price {
+    text-align: end;
+    max-width: 62px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: $mainDarkColor;
+
+    @media screen and (min-width: 1024px) {
+    max-width: 70px;
+    }
+}
+
+.menu__button {
+    display: block;
+    padding: 15px 24px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 auto;
+    background-color: $mainDarkColor;
+    border: 2px solid $mainLightColor;
+    border-radius: 25px;
+    color: $accentColor;
+    width: 100%;
+    max-width: 236px;
+    margin-top: 32px;
+
+    cursor: pointer;
+    transition: background-color $duration $timingFunction, border $duration $timingFunction;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+}
+
+.menu__button:hover,
+.menu__button:focus {
+    background-color: $mainLightColor;
+    border: 2px solid $accentColor;
+
+}
+
+.menu__indent {
+    border-bottom: 8px solid transparent;
+
+    @media screen and (min-width: 1280px) {
+            border-bottom: 12px solid transparent;
+        }
+    }
+
+.menu__indent-x {
+    border-bottom: 4px solid transparent;
+}
+
+.menu__indent-y {
+    border-bottom: 8px solid transparent;
+
+    @media screen and (min-width: 1024px) {
+        border-bottom: 15px solid transparent;
+    }
+
+    @media screen and (min-width: 1280px) {
+        border-bottom: 19px solid transparent;
+    }
+}
+
+.dishes__denotation > p {
+    margin-bottom: 8px;
+}

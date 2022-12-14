@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Трьохмісний номер</title>
 
-    <link rel="stylesheet" href="./sass/main.scss" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="./sass/main.scss">
+</head>
+<body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
     <main>
@@ -18,11 +18,12 @@
     <include src="./partials/footer.html"></include>
 
     <!-- MODAL WINDOWS-->
-    <include src="./partials/book-room.html"></include>
-    <include src="./partials/room-price.html"></include>
+
+    <include src="./partials/hotel/triple-room/book-room.html"></include>
+    <include src="./partials/hotel/triple-room/room-price.html"></include>
 
     <!-- BASE JS -->
-
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./js/slick.js"></script>
+    <script type="module" src="./js/modal.js"></script>
   </body>
 </html>

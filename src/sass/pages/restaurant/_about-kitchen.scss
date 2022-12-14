@@ -1,0 +1,23 @@
+.about-kitchen__container {
+      position: relative;
+  padding-top: 16px;
+  padding-bottom: 72px;
+  @include tablet {
+    padding-top: 120px;
+    padding-bottom: 262px;
+  }
+  @include desktop {
+    padding-bottom: 207px;
+  }
+}
+
+.about-kitchen__subtitle {
+    @extend .about-restaurant__subtitle;
+}
+
+.about-kitchen__logo {
+    @extend .about-restaurant__logo;
+    @include desktop {
+        color: $secondaryTitleColor;
+    }
+}

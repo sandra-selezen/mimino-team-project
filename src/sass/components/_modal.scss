@@ -1,8 +1,10 @@
 /* Стили для модальных окон */
-.modal {   
-   /*  Установаем ширину окна  */
-   width: 100%;
-   padding: 0 16px;
+.modal {
+  /*  Установаем ширину окна  */
+  width: 100%;
+  padding: 0 16px;
+  box-shadow: $modalShadow;
+  border-radius: 5px;
   @include mobile {
     width: 414px;
   }
@@ -161,6 +163,15 @@ select::-ms-expand {
     width: 288px;
   }
 }
+.modal-wrap-room-price {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+ margin-right: 304px;
+    width: 288px;
+  }
+}
 .user-name-text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -205,7 +216,3 @@ select::-ms-expand {
    z-index: 20;
    transition: .3s all;
 }
-
-
-
-

@@ -1,60 +1,63 @@
-.hero{
-
-    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), 
+.hero {
+    background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor), 
     url(../images/home/mobile/hmpg-1-mb.jpg);
-    background-color: rgba(0, 0, 0, 0.65);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-color: $heroBgColor;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     margin-right: auto;
     margin-left: auto;
-   
+
     padding-bottom: 20px;
-height: 740px;
-@include retina
-{background-image:  linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)), 
+    height: 740px;
+    @include retina {
+    background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor), 
     url(../images/home/mobile/hmpg-1-mb@2x.jpg); }
-@include tablet{
+    @include tablet {
     height: 720px;
+    background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
+    url(../images/home/tablet/hmpg-1-tb.jpg);
     
-background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
-url(../images/home/tablet/hmpg-1-tb.jpg);
-    
-  @include retina
- {
-    background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
-                    url(../images/home/tablet/hmpg-1-tb@2x.jpg);
+    @include retina {
+    background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
+    url(../images/home/tablet/hmpg-1-tb@2x.jpg);
     }  
-
- }
-
-@include desktop 
-    {background-image:linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
+}
+    @include desktop {
+    background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
     url(../images/home/desktop/hmpg-1-ds.jpg);
-                    
-    @include retina { background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),
+
+    @include retina {
+        background-image: linear-gradient(to bottom, $heroBgColor, $heroBgColor),
         url(../images/home/desktop/hmpg-1-ds@2x.jpg);
     }
     max-width: 1920px;
     }
 }
 
-.hero__subcontainer{
-position: relative;
-}
-.rest__address {
-position: absolute;
-top: 55px;
-left: 170px;
-@include tablet{
-top: 565px;
-left: 0;
-  
+.hero__subcontainer {
+    position: relative;
 }
 
+.rest__address {
+    position: absolute;
+    top: 60px;
+    left: 175px;    
     width: 210px;
     height: 47px;
-    
+    @media screen and (max-width: 413px) {
+    left: 90px;
+    }
+    @include tablet {
+    width: 285px;
+    height: 56px;   
+    top: 570px;
+    left: 0;
+    @include desktop {
+    top: 553px;
+    left: 0; 
+    }
+}
     display: flex;
     flex-wrap: nowrap;
     padding: 2px 5px 2px 5px;
@@ -66,19 +69,16 @@ left: 0;
     line-height: 1.25;
     letter-spacing: 0.01em;
     
-    color: #E5E5E5;
-    
-    border: 1px solid rgba(243, 198, 83, 0.7);
+    color: $addressColor;
+    border: 1px solid $accentBorderColor;
     border-radius: 2px;
+}
 
- 
-    }
-    .icon-location{
-        margin-right: 8px;
-    }
-    .hero__title{
-        display: flex;
-        justify-content: center;
+.icon-location {
+    margin-right: 8px;
+}
+
+.hero__title {
     font-family: 'Film P3';
     font-weight: 700;
     font-size: 96px;
@@ -86,96 +86,123 @@ left: 0;
     letter-spacing: 0.3em;
     text-transform: uppercase;
 
-    color: #FFFFFF;
-padding-top: 130px;
-    margin-bottom: 24px;
-@include tablet{
-    padding-top: 188px;
-    margin-bottom: 16px;
-}
+    color: $mainLightColor;
+    padding-top: 181px;
+    max-width: 303px;
+    margin: 0 auto;
+    
+    @include tablet {
+        padding-top: 188px;
+        margin-bottom: 16px;
     }
-.hero__pretitle{
-    display: flex;
-    justify-content: center;
+    @include desktop {
+        padding-top: 164px;
+        margin-bottom: 32px;
+    }
+}
+
+.hero__pretitle {
+    text-align: center;
     font-size: 16px;
     font-weight: 600;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    
-    color: #FFFFFF;
 
+    color: $mainLightColor;
+    margin-top: 24px;
     margin-bottom: 40px;
-    @include tablet{
-    margin-bottom: 56px;}
+    @include tablet {
+    margin-bottom: 56px;
+    }
+    @include desktop {
+    margin-bottom: 56px;
+    }
 }
-.hero__text{
-    display: flex;
-    justify-content: center;
 
+.hero__text {
+    text-align: center;
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 1.16;
-   letter-spacing: 0.05em;
-   text-transform: uppercase; 
-
-    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    text-transform: uppercase; 
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $mainLightColor;
     margin-bottom: 113px;
-    @include tablet{
+    @include tablet {
         margin-bottom: 145px;
     }
 }
 
-
-
-.hero__button:not(:last-child){
+.hero__button:not(:last-child) {
     margin-bottom: 24px;
-    @include  tablet{
+    @include  tablet {
         margin-bottom: 0;
     }
 }
-.hero__buttons{
+
+.hero__buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 61px;
     margin-right: 0;
-    @include tablet{
+
+    @include tablet {
     flex-wrap: nowrap;
     gap: 40px;
- margin-left: auto;
- justify-content: end;
- margin-bottom: 0;
+    margin-left: auto;
+    justify-content: end;
+    margin-bottom: 0;
+    }
 }
-}
-.hero__socials{
+
+.hero__socials {
     display: flex;
     position: absolute;
-    bottom: -135px;
+    bottom: -80px;
     left: 0;
-
-    @include tablet{
-    bottom: -85px;
-    left: 0;
+    @media screen and (max-width: 413px) {
+        bottom: -85px;
     }
-    @include desktop{
-        left: 1000px;
-        bottom: 560px;
+    @include tablet {
+        bottom: -85px;
+        left: 0;
     }
-    
-}
-.hero__socials__link:not(:last-child){
-    margin-right: 23px;
+    @include desktop {
+        display: none;
+    }
+    z-index: 20;   
+    @include desktop {
+        display: none;
+    }
+    z-index: 20;   
 }
 
-.hero__soc__icon{
-    fill: #F3C653;
+.hero__socials__desktop {
+    display: flex;
+    margin-left: 61px;
+    margin-left: 61px;
+    @media screen and (max-width: 1279px) {
+    display: none;
+    }
+}
+
+.hero__socials__link:not(:last-child) {
+    margin-right: 20px;
+}
+
+.hero__soc__icon {
+    fill: $accentColor;
     width: 22px;
-  height: 22px;
+    height: 22px;
 }
-.icon-location{
-fill:#F3C653;
-width: 24px;
-height: 24px;
+
+.icon-location {
+    fill:$accentColor;
+    width: 24px;
+    height: 24px;
 }

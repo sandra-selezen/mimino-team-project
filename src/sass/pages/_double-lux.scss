@@ -10,66 +10,102 @@ padding-bottom: 32px;
 
 }
 .room__info-title {
+    @media screen and (min-width:320px) and (max-width:413px) {
+                margin-bottom: 10px;
+                font-family: 'Times New Roman';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 1.68;
+                color: $mainDarkColor;
+
+    }
     @include mobile {
 margin-bottom: 16px;
 font-family: 'Times New Roman';
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
-    line-height: 37px;
-    color: #000000;
+    line-height: 1.15;
+    color: $mainDarkColor;
     }
 }
 .room__info-description {
+    @media screen and (min-width:320px) and (max-width:413px) {
+        margin-bottom: 10px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.5;
+            letter-spacing: 0.02em;
+        
+            color: $secondaryTextColor;
+    }
     @include mobile {
         margin-bottom: 32px;
         font-family: 'Montserrat';
             font-style: normal;
             font-weight: 700;
             font-size: 16px;
-            line-height: 20px;
+            line-height: 1.25;
             letter-spacing: 0.02em;
         
-            color: #7A7A7A;
+            color: $secondaryTextColor;
     }
-
-         @include tablet {
-             max-width: 757px;
-         }
-}
 .room__features-title {
+    @media screen and (min-width:320px) and (max-width:413px) {
+        margin-bottom: 10px;
+            font-family: 'Film P3';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 2;
+            color: $mainDarkColor;
+    }
     @include mobile {
         margin-bottom: 16px;
                 font-family: 'Film P3';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 24px;
-                    line-height: 28px;
-                    color: #000000;
+                    line-height: 1.16;
+                    color: $mainDarkColor;
                 }
     }
 
 .room__features-item{
     @include mobile {
-            margin-bottom: 16px;
+            margin-bottom: 32px;
         }
 }
 
 .room__features-description {
+    @media screen and (min-width:320px) and (max-width:413px) {
+            font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 0.02em;
+            
+                color: $secondaryTextColor;
+    }
     @include mobile {
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         letter-spacing: 0.02em;
     
-        color: #7A7A7A;
+        color: $secondaryTextColor;
     }
     @include tablet {
         max-width: 400px;
     }
 }
+
 .feature-column-1 {
     @include mobile {
             margin-bottom: 16px;
@@ -94,21 +130,40 @@ font-family: 'Times New Roman';
                 max-width: 959px;
 }
 }
+
 .room__booking-button {
+    transition: background .25s linear, border .25s linear;
+        @media screen and (min-width:320px) and (max-width:413px) {
+                margin-bottom: 10px;
+                margin-top: 10px;
+                background-color: $mainDarkColor;
+                width: 280px;
+                height: 54px;
+                border-radius: 25px;
+                border: 1px solid $accentColor;
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 1.5;
+        
+                color: $mainLightColor;
+            }
+
     @include mobile {
         margin-bottom: 20px;
-        background-color: black;
+        background-color: $mainDarkColor;
         width: 384px;
         height: 64px;
         border-radius: 25px;
-        border: 1px solid #F3C653;
+        border: 1px solid $accentColor;
         font-family: 'Montserrat';
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
-            line-height: 24px;
+            line-height: 1.2;
         
-            color: #FFFFFF;
+            color: $mainLightColor;
     }
         @include tablet {
             margin-bottom: 32px;
@@ -116,17 +171,34 @@ font-family: 'Times New Roman';
                     width: 434px;
                 }
 }
+
 .room__back-link {
 
     display: flex;
+        transition: color .25s cubic-bezier(.4, 0, .2, 1);
+
+    @media screen and (min-width:320px) and (max-width:413px) {
+        
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 1.66;
+                letter-spacing: 0.02em;
+                color: $secondaryAccentColor;
+                fill: $secondaryAccentColor;
+                margin-left: 16px;
+            }
+
     @include mobile {
     font-family: 'Montserrat';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         letter-spacing: 0.02em;
-        color: #C79002;
+        color: $secondaryAccentColor;
+        fill: $secondaryAccentColor;
         margin-left: 16px;
     }
         @include tablet {
@@ -134,8 +206,6 @@ margin-left: 0;
 font-size: 20px;
         }
 }
-
-
 
 .room__features-columns {
 @include tablet {
@@ -159,6 +229,17 @@ font-size: 20px;
 }
 
 .room__back-icon {
-    fill: #C79002;
     margin-left: 17px;
 }
+.room__back-link:hover,
+.room__back-link:focus {
+    color: $accentColor;
+    fill: $accentColor;
+}
+    
+ .room__booking-button:hover,
+ .room__booking-button:focus {
+    background-color: $accentColor;
+    color: $mainDarkColor;
+    cursor: pointer;
+ }

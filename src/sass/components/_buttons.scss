@@ -1,11 +1,20 @@
 .button-primary {
-  cursor: pointer;
-  border-radius: 25px;
-  padding: 14px 24px;
-  min-width: 236px;
-  text-align: center;
-  border: 2px solid $mainLightColor;
-  background-color: $buttonBgColor;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 25px;
+    padding: 14px 21px;
+    min-width: 236px;
+    text-align: center;
+    border: 2px solid $mainLightColor;
+    background-color: $buttonBgColor;
+
+    // шрифт
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $accentColor;
 
   // шрифт
   font-family: 'Montserrat', sans-serif;
