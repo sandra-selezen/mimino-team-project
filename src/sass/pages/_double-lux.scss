@@ -1,9 +1,4 @@
 .room__info {
-    @media screen and (min-width:320px) and (max-width:413px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
-        }
     @include mobile {
 padding-top: 32px;
 padding-bottom: 32px;
@@ -58,10 +53,6 @@ font-family: 'Times New Roman';
         
             color: $secondaryTextColor;
     }
-
-         @include tablet {
-             max-width: 757px;
-         }
 }
 .room__features-title {
     @media screen and (min-width:320px) and (max-width:413px) {
@@ -85,9 +76,6 @@ font-family: 'Times New Roman';
     }
 
 .room__features-item{
-    @media screen and (min-width:320px) and (max-width:413px) {
-        margin-bottom: 10px;
-        }
     @include mobile {
             margin-bottom: 32px;
         }
@@ -118,10 +106,8 @@ font-family: 'Times New Roman';
         max-width: 400px;
     }
 }
+
 .feature-column-1 {
-    @media screen and (min-width:320px) and (max-width:413px) {
-        margin-bottom: 10px;
-    }
     @include mobile {
             margin-bottom: 16px;
         }
@@ -145,6 +131,7 @@ font-family: 'Times New Roman';
                 max-width: 959px;
 }
 }
+
 .room__booking-button {
     transition: background .25s linear, border .25s linear;
         @media screen and (min-width:320px) and (max-width:413px) {
@@ -185,6 +172,7 @@ font-family: 'Times New Roman';
                     width: 434px;
                 }
 }
+
 .room__back-link {
 
     display: flex;
@@ -219,8 +207,6 @@ margin-left: 0;
 font-size: 20px;
         }
 }
-
-
 
 .room__features-columns {
 @include tablet {

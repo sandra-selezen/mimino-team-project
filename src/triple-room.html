@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Трьохмісний номер</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
@@ -16,17 +16,18 @@
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <include src="./partials/header.html"></include>
     <main>
-        <include src="./partials/hotel/triple-room/hero.html"></include>
-        <include src="./partials/hotel/triple-room/about.html"></include>
+      <include src="./partials/hotel/triple-room/hero.html"></include>
+      <include src="./partials/hotel/triple-room/about.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
 
     <!-- MODAL WINDOWS-->
 
-    <script type="module" src="./js/slick.js"></script>
-    <script type="module" src="./js/tbl-modal.js"></script>
-    <include src="./partials/hotel/triple-room/book-room.html"></include>
-    <include src="./partials/hotel/triple-room/room-price.html"></include>
+    <include src="./partials/book-room.html"></include>
+    <include src="./partials/room-price.html"></include>
 
-</body>
+    <!-- BASE JS -->
+    <script type="module" src="./js/slick.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+  </body>
 </html>
