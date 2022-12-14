@@ -1,3 +1,11 @@
+.room__header {
+    background-image: $roomHeaderGradirnt;
+}
+
+.room__hero {
+    background-color: $heroBgColor;
+}
+
 .hotel__title_hero {
     display: flex;
     justify-content: flex-start;
