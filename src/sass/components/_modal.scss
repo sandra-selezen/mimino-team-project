@@ -2,11 +2,12 @@
 .modal {
   /*  Установаем ширину окна  */
   width: 100%;
-  padding: 0 16px;
+  padding: 60 15px;
   box-shadow: $modalShadow;
   border-radius: 5px;
   @include mobile {
     width: 414px;
+    padding: 60px 15px;
   }
   @include tablet {
     width: 712px;
@@ -150,6 +151,7 @@ select::-ms-expand {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   @include tablet {
     width: 288px;
   }
@@ -158,6 +160,7 @@ select::-ms-expand {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   @include tablet {
     margin-left: 304px;
     width: 288px;
@@ -167,6 +170,7 @@ select::-ms-expand {
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   @include tablet {
  margin-right: 304px;
     width: 288px;
@@ -182,6 +186,7 @@ select::-ms-expand {
   color: $secondaryAccentColor;
   padding-left: 12px;
   margin-top: 8px;
+  text-align: start;
 }
 .button-submit {
   @extend .button-modal;
@@ -194,6 +199,7 @@ select::-ms-expand {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
+  text-align: start;
   color: $secondaryAccentColor;
   padding-left: 12px;
   margin-top: 8px;
