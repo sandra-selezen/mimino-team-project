@@ -24,5 +24,24 @@ a {
   text-decoration: none;
 }
 
+table,
+tbody,
+caption,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-size: inherit;
+  vertical-align: baseline;
+}
 
-
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
