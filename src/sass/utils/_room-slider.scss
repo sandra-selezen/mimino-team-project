@@ -1,0 +1,9 @@
+.room-slider__item .slick-slider {
+    width: 100%;
+    @include tablet {
+        width: 1024;
+    }
+    @include desktop {
+        width: 1280px;
+    }
+}
