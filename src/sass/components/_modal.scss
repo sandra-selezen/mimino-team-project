@@ -215,4 +215,5 @@ select::-ms-expand {
    background-color: rgba(0, 0, 0, .5);
    z-index: 20;
    transition: .3s all;
+   pointer-events: none;
 }
