@@ -64,30 +64,11 @@
   display: flex;
   gap: 20px;
   @include tablet {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 12px;
   }
 }
-.soc-list__instagram {
-  @include tablet {
-    order: 3;
-  }
-}
-.soc-list__facebook {
-  @include tablet {
-    order: 2;
-  }
-}
-.soc-list__telegram {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: $mainLightColor;
-  }
-  @include tablet {
-    order: 1;
-  }
-}
+
 .soc-list__link {
   position: relative;
 }
