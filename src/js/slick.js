@@ -16,7 +16,6 @@ $('.hotel-slider-right').slick({
   variableWidth: true,
 });
 
-
 $('.homepage-slider').slick({
   dots: false,
   infinite: true,
@@ -54,5 +53,3 @@ $('.hero-slider').slick({
   autoplay: true,
   autoplaySpeed: 3000,
 });
-
-
