@@ -220,6 +220,7 @@ margin-left: 10px;
 margin-top: 26px;
 margin-right: 10px;
 margin-bottom: 26px;
+fill: $secondaryAccentColor;
 }
 
 .contact__map {
@@ -230,8 +231,8 @@ margin-bottom: 26px;
   width: 384px;
   height: 220px;
 
-  border: 1px solid #BABABA;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border: 1px solid $heroTextColor;
+  box-shadow: 2px 2px 60px 2px $primaryShadowColor;
   border-radius: 2px;
 
   @include tablet {
