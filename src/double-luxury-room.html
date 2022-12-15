@@ -10,11 +10,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
 
+       <!-- SLICK -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
     <link rel="stylesheet" href="./sass/main.scss">
 </head>
 <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/header.html"></include>
+    <include src="./partials/hotel/double-luxury-room/header-room.html"></include>
     <main>
       <include src="./partials/hotel/double-luxury-room/hero.html"></include>
       <include src="./partials/hotel/double-luxury-room/about.html"></include>
@@ -25,7 +37,27 @@
     <include src="./partials/book-room.html"></include>
     <include src="./partials/room-price.html"></include>
 
+    <!-- SLICK jQuery -->
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <!-- SLICK -->
+
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <!-- BASE JS -->
+
+    <script type="module" src="./js/slick.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>
