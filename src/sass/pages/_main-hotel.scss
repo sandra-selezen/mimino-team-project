@@ -104,6 +104,14 @@
   &__wrap--right {
     max-width: 305px;
     margin-left: auto;
+
+    @include tablet {
+      max-width: 379px;
+    }
+
+    @include desktop {
+      max-width: 457px;
+    }
   }
   &__thumb {
     margin-bottom: 32px;
