@@ -5,12 +5,10 @@
   @include tablet {
     position: relative;
     padding-top: 62px;
-    padding-bottom: 104px;
   }
 
   @include desktop {
     padding-top: 72px;
-    padding-bottom: 112px;
   }
 
   &--secondary-bg-color {

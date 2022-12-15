@@ -12,8 +12,11 @@
   
 
   @include tablet {
-    margin-bottom: 0;
     right: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 80px;
   }
 
   &__item {
@@ -99,8 +102,11 @@
   margin-bottom: 72px;
 
   @include tablet {
-    margin-bottom: 0;
     left: 0;
+  }
+
+  @include desktop {
+    margin-bottom: 80px;
   }
 
   &__item {
