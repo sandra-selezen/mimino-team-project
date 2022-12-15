@@ -14,20 +14,20 @@
 }
 .header-grad {
   position: absolute;
-   left: 50%;
+  left: 50%;
   transform: translateX(-50%);
   background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
   width: 414px;
   height: 143px;
   z-index: -1;
-@include tablet {
-width: 1024px;
-height: 116px;
-}
-@include desktop {
-  width: 1280px;
-  height: 147px;
-}
+  @include tablet {
+  width: 1024px;
+  height: 116px;
+  }
+  @include desktop {
+    width: 1280px;
+    height: 147px;
+  }
 }
 
 .logo__name {
