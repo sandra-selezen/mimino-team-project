@@ -171,11 +171,3 @@
       right: 0;
     }
   }
-
-// IMAGE WIDTH FOR HOTEL SLIDER 
-
-.details-hotel__image {
-  @include tablet {
-    width: 270px;
-  }
-}
