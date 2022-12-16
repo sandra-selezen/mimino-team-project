@@ -75,34 +75,21 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.15;
     color: $mainDarkColor;
     text-align: left;
 
     @include tablet {
         margin-bottom: 20px;
+        line-height: 1.5;
+        
+    }
+
+    @include desktop {
+        font-size: 24px;
+        line-height: 1.16;
     }
 }
-
-// .menu__list {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-
-//     width: 300px;
-
-//     max-width: 384px;
-//     gap: 8px;
-
-//     @media screen and (min-width: 1024px) {
-//         max-width: 420px;
-//     }
-
-//     @media screen and (min-width: 1280px) {
-//         max-width: 485px;
-//         gap: 12px;
-//     }
-// }
 
 .menu__card {
     margin-top: 4px;
@@ -127,6 +114,12 @@
     
     @media screen and (min-width: 1024px) {
         max-width: 260px;
+         
+    }
+
+    @include desktop {
+        font-size: 16px;
+        line-height: 1.25;
     }
 }
 
@@ -159,6 +152,8 @@
 
     @media screen and (min-width: 1024px) {
     max-width: 70px;
+    font-size: 16px;
+    line-height: 1.25;
     }
 }
 
