@@ -23,6 +23,11 @@
 .footer__logo,
 .footer__link {
   color: $accentColor;
+  transition: color $duration $timingFunction;
+  &:hover,
+  &:focus {
+    color: $mainLightColor;
+  }
 }
 
 .footer__logo {
@@ -66,14 +71,23 @@
 
 .soc-list__link {
   position: relative;
+  fill: $accentColor;
+  transition: fill $duration $timingFunction;
+
+  &:hover,
+  &:focus {
+    fill: $mainLightColor;
+  }
 }
+
 .soc-list__text {
   display: none;
   @include tablet {
     display: block;
     width: 143px;
     height: 40px;
-    border: 0.5px solid $accentColor;
+    border: 0.5px solid;
+    border-color: $accentColor;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -81,13 +95,22 @@
     color: $accentColor;
     font-size: 16px;
     line-height: calc(20 / 16);
+
+    transition: color $duration $timingFunction,
+    border-color $duration $timingFunction;
+
+    &:hover,
+    &:focus {
+      color: $mainLightColor;
+      border-color: $mainLightColor;
+    }
   }
 }
 
 .soc-list__icon {
-  fill: $accentColor;
   display: flex;
   align-items: center;
+
   @include tablet {
     position: absolute;
     top: 8px;
