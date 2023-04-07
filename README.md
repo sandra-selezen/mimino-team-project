@@ -1,4 +1,6 @@
-Responsive **Mimino** Website Using:
+Responsive **Mimino** Website
+
+Using:
 
 - HTML
 - SASS
