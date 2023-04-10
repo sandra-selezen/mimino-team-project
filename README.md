@@ -4,6 +4,7 @@ Using:
 
 - HTML
 - SASS
+- Slick slider
 - JavaScript
 - Parcel
 
