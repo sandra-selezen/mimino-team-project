@@ -1,11 +1,6 @@
 Responsive **"Mimino"** Website
 
-Using:
-
-- HTML
-- SASS
-- Slick slider
-- JavaScript
-- Parcel
+- Responsive **"Mimino"** Website Using HTML CSS & JavaScript
+- Developed first with the Mobile First methodology, then for desktop
 
 ![preview](./src/images/preview.png)
