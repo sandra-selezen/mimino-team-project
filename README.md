@@ -1,6 +1,7 @@
 # Responsive **"Mimino"** Website
 
-- Responsive **"Mimino"** Website Using HTML CSS & JavaScript
-- Developed with the **mobile first** methodology, then for desktop
+- Multi-page responsive website for a restaurant and hotel complex.
+- Added custom modal windows for booking a hotel room or a table in a restaurant. 
+- Added photo gallery slider.
 
 ![preview](./src/images/preview.png)
